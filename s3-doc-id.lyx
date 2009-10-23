@@ -3923,6 +3923,14 @@ Menu itu adalah menu utama untuk melakukan stock take.
 \end_layout
 
 \begin_layout Standard
+Pada stable11, terdapat fitur List stocktakes by: yang dapat dipilih Current
+ User Only, yang berarti daftar item yang terlihat adalah yang distocktake
+ oleh user yang bersangkutan.
+ Atau All User, berarti daftar item yang distocktake adalah item yang distocktak
+e oleh semua user yang melakukan stocktake.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3931,7 +3939,8 @@ status collapsed
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_current1.png
+	filename image/stocktake_current3.png
+	scale 110
 
 \end_inset
 
@@ -3976,7 +3985,6 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename image/stocktake_report1.png
-	scale 80
 
 \end_inset
 
@@ -4512,13 +4520,12 @@ target "Hide Filter Option"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename image/rep-item.png
-	scale 80
 
 \end_inset
 
@@ -4560,14 +4567,14 @@ Merupakan laporan yang menginformasikan item, title dan berapakali item
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
 \noindent
 \align center
 \begin_inset Graphics
 	filename image/itemusage.png
-	scale 80
+	scale 90
 
 \end_inset
 
@@ -4617,7 +4624,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename image/loanbyclass2.png
-	scale 80
 
 \end_inset
 
@@ -4661,13 +4667,13 @@ Berisi laporan/daftar anggota perpustakaan.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename image/rep-member.png
-	scale 70
+	scale 90
 
 \end_inset
 
@@ -4707,13 +4713,13 @@ Merupakan laporan yang berisi daftar koleksi yang masih di pinjam Anggota.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename image/rep-hystori.png
-	scale 70
+	scale 90
 
 \end_inset
 
@@ -4759,13 +4765,13 @@ target "Show More Filter Options"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename image/rep-loanhys.png
-	scale 70
+	scale 90
 
 \end_inset
 
@@ -4813,7 +4819,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename image/rep-overdu.png
-	scale 70
+	scale 90
 
 \end_inset
 
@@ -4862,13 +4868,13 @@ Untuk memperakurat informasi, disediakan pula filter yang memungkinkan kita
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename image/rep_staffactv.png
-	scale 50
+	scale 80
 	rotateOrigin centerTop
 
 \end_inset
