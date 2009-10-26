@@ -1,8 +1,9 @@
-#LyX 1.5.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 276
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
 \begin_document
 \begin_header
 \textclass book
+\use_default_options false
 \language bahasa
 \inputencoding auto
 \font_roman default
@@ -13,10 +14,12 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \float_placement H
 \paperfontsize default
 \spacing onehalf
+\use_hyperref false
 \papersize default
 \use_geometry false
 \use_amsmath 1
@@ -42,12 +45,14 @@
 
 \begin_layout Title
 Manual Senayan versi 3
-\newline
+\begin_inset Newline newline
+\end_inset
+
 Berdasar Senayan3-stable11
 \begin_inset Foot
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ditulis dengan LyX 1.5.3 di atas Ubuntu 8.04 LTS
 \end_layout
 
@@ -83,8 +88,9 @@ New-feature: Change Loan Date and Due Date manually in circulation transaction
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
 
-\newpage
 
 \end_layout
 
@@ -217,8 +223,9 @@ Terimakasih atas semua komentar yang diberikan, semoga kita diikhlaskan
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
 
-\newpage
 
 \end_layout
 
@@ -228,7 +235,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/senayan2_logtypekecil.png
@@ -245,8 +252,9 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
 
-\newpage
 
 \end_layout
 
@@ -255,12 +263,16 @@ status collapsed
 
 \emph on
 Credit Title: 
-\newline
-Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha
- (dicarve@yahoo.com) – Arif Syamsudin (buitenzorg812@yahoo.com) – M.
+\begin_inset Newline newline
+\end_inset
+
+Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha (dicarve@yahoo.com)
+ – Arif Syamsudin (buitenzorg812@yahoo.com) – M.
  Rasyid Ridho (ridho_edogawa@yahoo.com) –Sulfan Zayd (sulfan@gmail.com) --
  Purwoko (tamanjiwa@gmail.com) -- Wardiyono (wynerst@gmail.com)
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -268,10 +280,17 @@ Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha
 \noindent
 \align center
 Documen ini menggunakan Lisensi Creative Common License (CCL)
-\newline
+\begin_inset Newline newline
+\end_inset
 
-\begin_inset LatexCommand url
-target "http://creativecommons.org/about/licenses/"
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://creativecommons.org/about/licenses/
+\end_layout
 
 \end_inset
 
@@ -285,7 +304,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/cc_large-300x300.png
@@ -302,13 +321,15 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
 
-\newpage
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset LatexCommand tableofcontents
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
 
 \end_inset
 
@@ -333,7 +354,9 @@ Pendahuluan
 \color blue
 No furniture so charming as books.
  - Sydney Smith
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -350,16 +373,28 @@ SENAYAN adalah Open Source Software (OSS) berbasis web untuk memenuhi kebutuhan
 Keunggulan SENAYAN lainnya adalah multi-platform, yang artinya bisa berjalan
  secara natif hampir di semua Sistem Operasi yang bisa menjalankan bahasa
  pemrograman PHP (
-\begin_inset LatexCommand url
-target "http://www.php.net"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.php.net
+\end_layout
 
 \end_inset
 
 ) dan RDBMS MySQL
-\newline
+\begin_inset Newline newline
+\end_inset
+
  (
-\begin_inset LatexCommand url
-target "http://www.mysql.com"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.mysql.com
+\end_layout
 
 \end_inset
 
@@ -372,13 +407,20 @@ target "http://www.mysql.com"
 Senayan merupakan aplikasi berbasis web dengan pertimbangan cross-platform.
  Sepenuhnya dikembangkan menggunakan Software Open Source yaitu: PHP Web
  Scripting Language, (
-\begin_inset LatexCommand url
-target "www.php.net"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.php.net
+\end_layout
 
 \end_inset
 
 ) dan MySQL Database Server
-\newline
+\begin_inset Newline newline
+\end_inset
+
  (www.mysql.com).
  Untuk meningkatkan interaktifitas agar bisa tampil seperti aplikasi desktop,
  juga digunakan teknologi AJAX (Asynchronous JavaScript And XML).
@@ -389,8 +431,13 @@ target "www.php.net"
  mendapatkan, memodifikasi dan mendistribusikan kembali (rights to use,
  study, copy, modify, and redistribute computer programs).
  Lebih detail tentang GPLv3 bisa dibaca di 
-\begin_inset LatexCommand url
-target "http://www.gnu.org/licenses/gpl-3.0.html"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gnu.org/licenses/gpl-3.0.html
+\end_layout
 
 \end_inset
 
@@ -408,8 +455,13 @@ Senayan versi 1 dan 2 tidak dirilis ke publik karena masih tahap ujicoba
  kebutuhan.
  Untuk melihat demo dan mendownload software Senayan, bisa berkunjung ke
  
-\begin_inset LatexCommand url
-target "http://senayan.diknas.go.id."
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://senayan.diknas.go.id.
+\end_layout
 
 \end_inset
 
@@ -573,7 +625,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-01.png
@@ -584,10 +636,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Letakkan file senayan*.tar.gz ke web document root
 \end_layout
 
@@ -627,7 +679,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-02.png
@@ -638,10 +690,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Ekstrak file senayan*.tar.gz
 \end_layout
 
@@ -662,7 +714,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-03.png
@@ -673,10 +725,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Senayan*.tar.gz telah selesai diekstrak
 \end_layout
 
@@ -712,7 +764,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-04.png
@@ -723,10 +775,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Membuat database melalui console MySQL
 \end_layout
 
@@ -785,7 +837,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-new.png
@@ -795,10 +847,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Membuat database dengan bantuan phpMyAdmin
 \end_layout
 
@@ -818,7 +870,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-new1.png
@@ -828,10 +880,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Membuat database dengan bantuan phpMyAdmin
 \end_layout
 
@@ -851,7 +903,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-06.png
@@ -862,10 +914,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Dump data SQL ke database Senayan melalui MySQL console
 \end_layout
 
@@ -898,7 +950,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-new2.png
@@ -908,10 +960,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Import data .sql dengan PhpmyAdmin
 \end_layout
 
@@ -931,7 +983,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-new3.png
@@ -941,10 +993,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hasil Import di PhpMyadmin
 \end_layout
 
@@ -964,7 +1016,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-08.png
@@ -975,10 +1027,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Membuat user database melalui MySQL console
 \end_layout
 
@@ -1016,7 +1068,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-09.png
@@ -1027,10 +1079,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Konfigurasi koneksi database pada file sysconfig.inc.php
 \end_layout
 
@@ -1050,7 +1102,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-10.png
@@ -1061,10 +1113,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Konfigurasi database yang telah disesuaikan
 \end_layout
 
@@ -1144,7 +1196,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-11.png
@@ -1154,10 +1206,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Aplikasi Senayan sudah bisa digunakan
 \end_layout
 
@@ -1203,7 +1255,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-12.png
@@ -1214,10 +1266,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Kopi file psenayan*.zip ke root directory/folder
 \end_layout
 
@@ -1233,14 +1285,24 @@ Kopi file psenayan*.zip ke root directory/folder
 
 \begin_layout Standard
 Kopi file 
-\begin_inset LatexCommand url
-target "psenayan-x.x.zip"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+psenayan-x.x.zip
+\end_layout
 
 \end_inset
 
  (misalnya psenayan-3.0.zip, silakan dapatkan rilis terbaru Psenayan di 
-\begin_inset LatexCommand url
-target "http://senayan.diknas.go.id"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://senayan.diknas.go.id
+\end_layout
 
 \end_inset
 
@@ -1259,7 +1321,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-13.png
@@ -1270,10 +1332,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Ekstrak psenayan*.zip
 \end_layout
 
@@ -1301,7 +1363,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-14.png
@@ -1312,10 +1374,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Folder psenayan telah terbentuk
 \end_layout
 
@@ -1340,7 +1402,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-15.png
@@ -1351,10 +1413,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 File dan folder yang terdapat didalam psenayan
 \end_layout
 
@@ -1380,7 +1442,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-16.png
@@ -1391,10 +1453,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Dalam beberapa versi Windows, akan muncul message firewall ketika apache
  pertama kali dijalankan
 \end_layout
@@ -1422,7 +1484,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-17.png
@@ -1433,10 +1495,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apache telah berjalan dengan baik
 \end_layout
 
@@ -1462,7 +1524,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-18.png
@@ -1473,10 +1535,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Dalam beberapa versi Windows, akan muncul message firewall ketika MySQL
  pertama kali dijalankan
 \end_layout
@@ -1506,7 +1568,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-19.png
@@ -1517,10 +1579,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 MySQL telah berjalan dengan baik
 \end_layout
 
@@ -1546,7 +1608,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/instalasi-20.png
@@ -1557,10 +1619,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Aplikasi Senayan sudah bisa digunakan
 \end_layout
 
@@ -1576,8 +1638,13 @@ Aplikasi Senayan sudah bisa digunakan
 
 \begin_layout Standard
 Aktifkan browser, kemudian akses 
-\begin_inset LatexCommand url
-target "http://localhost"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://localhost
+\end_layout
 
 \end_inset
 
@@ -1653,7 +1720,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio.png
@@ -1663,10 +1730,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Form untuk menambakan data bibliografi/katalog 
 \end_layout
 
@@ -1821,7 +1888,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bib-promote1.png
@@ -1832,10 +1899,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Fitur Hide in OPAC, Label dan Promote to Homepage
 \end_layout
 
@@ -1872,7 +1939,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-item-new.png
@@ -1882,10 +1949,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Pop-up window untuk menambahkan Item/Kopi 
 \end_layout
 
@@ -1894,7 +1961,7 @@ Pop-up window untuk menambahkan Item/Kopi
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2021,7 +2088,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-list.png
@@ -2032,10 +2099,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Bibliographic list 
 \end_layout
 
@@ -2044,7 +2111,7 @@ Bibliographic list
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2060,7 +2127,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-edit.png
@@ -2071,10 +2138,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Edit bibliography 
 \end_layout
 
@@ -2083,7 +2150,7 @@ Edit bibliography
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2133,7 +2200,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/item-list.png
@@ -2144,10 +2211,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 item list 
 \end_layout
 
@@ -2156,7 +2223,7 @@ item list
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2172,7 +2239,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/item-edit.png
@@ -2183,10 +2250,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 edit item 
 \end_layout
 
@@ -2195,7 +2262,7 @@ edit item
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2224,7 +2291,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-chekout.png
@@ -2235,10 +2302,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Checkout item 
 \end_layout
 
@@ -2247,7 +2314,7 @@ Checkout item
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2283,7 +2350,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/z39501.png
@@ -2293,10 +2360,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses awal Z39.50
 \end_layout
 
@@ -2317,7 +2384,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/z39502.png
@@ -2327,10 +2394,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses kedua Z39.50
 \end_layout
 
@@ -2351,7 +2418,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/z39503.png
@@ -2361,10 +2428,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses Ketiga Z39.50
 \end_layout
 
@@ -2385,7 +2452,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/z39504.png
@@ -2395,10 +2462,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hasil Z39.50 
 \end_layout
 
@@ -2415,8 +2482,13 @@ Hasil Z39.50
 \begin_layout Standard
 Untuk penggunaan Z39.50 library YAZ harus diinstall terlebih dahulu.
  Detail installasi YAZ, bisa dibuka di 
-\begin_inset LatexCommand url
-target "http://dicarve.blogspot.com"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://dicarve.blogspot.com
+\end_layout
 
 \end_inset
 
@@ -2446,7 +2518,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-labelprint.png
@@ -2457,10 +2529,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Labels printing 
 \end_layout
 
@@ -2469,7 +2541,7 @@ Labels printing
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2506,7 +2578,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bib-labelprint.png
@@ -2516,10 +2588,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Selesai mencetak 
 \end_layout
 
@@ -2528,7 +2600,7 @@ Selesai mencetak
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2544,7 +2616,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bib-labeljadi.png
@@ -2554,10 +2626,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hasil Cetakan
 \end_layout
 
@@ -2566,7 +2638,7 @@ Hasil Cetakan
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2597,7 +2669,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bib-prinbarcode.png
@@ -2607,10 +2679,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Item barcode printing 
 \end_layout
 
@@ -2619,7 +2691,7 @@ Item barcode printing
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2653,7 +2725,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bib-labelprint.png
@@ -2663,10 +2735,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Selesai mencetak 
 \end_layout
 
@@ -2675,7 +2747,7 @@ Selesai mencetak
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2690,7 +2762,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bib-bar-jadi.png
@@ -2701,10 +2773,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hasil cetakan 
 \end_layout
 
@@ -2713,7 +2785,7 @@ Hasil cetakan
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2736,16 +2808,28 @@ Menu import data ini digunakan untuk mengambil data bibliografi dari luar
 Untuk petunjuk import data, secara lebih ditail silakan baca pada manual
  konversi data dari Athenaeum ke Senayan dan dari SIPISIS ke Senayan.
  Manual konversi ini dapat anda peroleh di 
-\begin_inset LatexCommand url
-target "http://senayan.diknas.go.id/download/docs/tutorial-athen2senayan.pdf"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://senayan.diknas.go.id/download/docs/tutorial-athen2senayan.pdf
+\end_layout
 
 \end_inset
 
  
-\newline
+\begin_inset Newline newline
+\end_inset
+
 dan 
-\begin_inset LatexCommand url
-target "http://senayan.diknas.go.id/download/docs/tutorial-isis2senayan.pdf"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://senayan.diknas.go.id/download/docs/tutorial-isis2senayan.pdf
+\end_layout
 
 \end_inset
 
@@ -2756,8 +2840,13 @@ target "http://senayan.diknas.go.id/download/docs/tutorial-isis2senayan.pdf"
 Selain itu Tim Pengembang Senayan juga menyediakan tool online untuk konversi
  senayan.
  Tool ini dapat anda akses di 
-\begin_inset LatexCommand url
-target "http://senayan.diknas.go.id/senayan-converter/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://senayan.diknas.go.id/senayan-converter/
+\end_layout
 
 \end_inset
 
@@ -2789,20 +2878,24 @@ Contohnya adalah sebagai berikut:
 
 \begin_layout LyX-Code
 "Linux In a Nutshell","Printed Book","Fifth Edition","9780596009304","OReilly",
-\newline
-"
-2005","xiv, 925 p.
+\begin_inset Newline newline
+\end_inset
+
+"2005","xiv, 925 p.
  : ill.
  ; 23 cm.","In a Nutshell","005.4/32-22 Ell
-\newline
- l","English","Sebastopol, CA","005.4/32
- 22","","linux_in_a_nutshell.jpg",
-\newline
-"","<Siever, Ellen><Love, Robert><Robbins,
- Arnold><Figgins, Stephen><Weber,
-\newline
- Aaron>","<Operating System><Linux><Computer>",
-"<B00009><B00010>"
+\begin_inset Newline newline
+\end_inset
+
+ l","English","Sebastopol, CA","005.4/32 22","","linux_in_a_nutshell.jpg",
+\begin_inset Newline newline
+\end_inset
+
+"","<Siever, Ellen><Love, Robert><Robbins, Arnold><Figgins, Stephen><Weber,
+\begin_inset Newline newline
+\end_inset
+
+ Aaron>","<Operating System><Linux><Computer>","<B00009><B00010>"
 \end_layout
 
 \begin_layout Standard
@@ -2815,7 +2908,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-eksport.png
@@ -2825,10 +2918,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses Eksport Bibliography 
 \end_layout
 
@@ -2837,7 +2930,7 @@ Proses Eksport Bibliography
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2877,7 +2970,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/biblio-import.png
@@ -2887,10 +2980,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses Import Bibliography 
 \end_layout
 
@@ -2899,7 +2992,7 @@ Proses Import Bibliography
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2943,7 +3036,9 @@ Membership
 \color blue
 Your library is your portrait.
  - Holbrook Jackson
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -2970,7 +3065,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/member-list.png
@@ -2981,10 +3076,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 List data anggota 
 \end_layout
 
@@ -2993,7 +3088,7 @@ List data anggota
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3021,7 +3116,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/member-extend.png
@@ -3032,10 +3127,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Perpanjang Keanggotaan 
 \end_layout
 
@@ -3085,7 +3180,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/member-add.png
@@ -3095,10 +3190,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Form Add New Member 
 \end_layout
 
@@ -3107,7 +3202,7 @@ Form Add New Member
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3136,7 +3231,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/member-type.png
@@ -3147,10 +3242,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Member Type 
 \end_layout
 
@@ -3159,7 +3254,7 @@ Member Type
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3194,13 +3289,17 @@ Contoh record data csv dari member ini adalah:
 
 \begin_layout LyX-Code
 "M001","Hendro Wicaksono","0","Mahasiswa","hendrowicaksono@yahoo.com",
-\newline
-"Jakarta","
-99999","Perpustakaan DIKNAS","","member_M001.jpeg","KTP No.
-\newline
- 123","99999","99999","
-2008-12-25","2008-12-25","2009-12-25",
-\newline
+\begin_inset Newline newline
+\end_inset
+
+"Jakarta","99999","Perpustakaan DIKNAS","","member_M001.jpeg","KTP No.
+\begin_inset Newline newline
+\end_inset
+
+ 123","99999","99999","2008-12-25","2008-12-25","2009-12-25",
+\begin_inset Newline newline
+\end_inset
+
 "Anggota Teladan tahun 2006" 
 \end_layout
 
@@ -3210,7 +3309,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/member-eksport.png
@@ -3220,10 +3319,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Gambar Member Eksport 
 \end_layout
 
@@ -3232,7 +3331,7 @@ Gambar Member Eksport
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3247,7 +3346,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/member-import.png
@@ -3257,10 +3356,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Member Import 
 \end_layout
 
@@ -3269,7 +3368,7 @@ Member Import
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3295,7 +3394,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/mem-car.png
@@ -3307,10 +3406,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Member Card
 \end_layout
 
@@ -3333,7 +3432,9 @@ Circulation
 \emph on
 \color blue
 What in the world would we do without our libraries? --Katherine Hepburn
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -3366,7 +3467,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sirk-mulai.png
@@ -3377,10 +3478,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses Sirkulasi 
 \end_layout
 
@@ -3389,7 +3490,7 @@ Proses Sirkulasi
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3424,7 +3525,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sirk-edit-date.png
@@ -3435,10 +3536,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Penentuan Loan dan Due date secara manual
 \end_layout
 
@@ -3473,7 +3574,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sirk-quick.png
@@ -3483,10 +3584,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 QuickReturn 
 \end_layout
 
@@ -3495,7 +3596,7 @@ QuickReturn
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3523,7 +3624,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sirk-loanrules.png
@@ -3533,10 +3634,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Loan Rules 
 \end_layout
 
@@ -3545,7 +3646,7 @@ Loan Rules
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3577,7 +3678,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sirk-loanhys.png
@@ -3588,10 +3689,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Loan History 
 \end_layout
 
@@ -3600,7 +3701,7 @@ Loan History
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3630,7 +3731,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sirk-loanover.png
@@ -3641,10 +3742,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Loan Overdued 
 \end_layout
 
@@ -3653,7 +3754,7 @@ Loan Overdued
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3679,7 +3780,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
@@ -3691,10 +3792,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Daftar Koleksi di Pesan dan Anggota Pemesan
 \end_layout
 
@@ -3703,7 +3804,7 @@ Daftar Koleksi di Pesan dan Anggota Pemesan
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3722,7 +3823,9 @@ Stoke Take
 \color blue
 I have always imagined that Paradise will be a kind of library.
  --Jorge Luis Borges
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -3754,10 +3857,10 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_history.png
+	filename image/stocktake_history.png
 	scale 70
 
 \end_inset
@@ -3765,10 +3868,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Stock Take History 
 \end_layout
 
@@ -3834,12 +3937,12 @@ Classification Mengacu ke sub menu class pada modul Bibliography.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_initilaize.png
+	filename image/stocktake_initilaize.png
 	scale 80
 
 \end_inset
@@ -3847,10 +3950,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Initialize 
 \end_layout
 
@@ -3868,12 +3971,12 @@ Initialize
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_initialized.png
+	filename image/stocktake_initialized.png
 	scale 80
 
 \end_inset
@@ -3881,10 +3984,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Proses Initialize 
 \end_layout
 
@@ -3934,9 +4037,9 @@ e oleh semua user yang melakukan stocktake.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/stocktake_current3.png
@@ -3947,10 +4050,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Current Stock Take
 \end_layout
 
@@ -3981,7 +4084,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/stocktake_report1.png
@@ -3991,10 +4094,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Stockt Take Report 
 \end_layout
 
@@ -4025,22 +4128,22 @@ Klik link ini apabila kita telah selesai melakukan stock opname.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_finish.png
+	filename image/stocktake_finish.png
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Finish Stock Take 
 \end_layout
 
@@ -4067,12 +4170,12 @@ Isi menu ini merupakan daftar dari koleksi yang dianggap hilang pada saat
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_current_lost.png
+	filename image/stocktake_current_lost.png
 	scale 80
 
 \end_inset
@@ -4080,10 +4183,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Current Lost Item 
 \end_layout
 
@@ -4110,22 +4213,22 @@ Fungsi menu ini adalah untuk mengetahui rekaman (Log) saat melakukan proses
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_log.png
+	filename image/stocktake_log.png
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Stock Take Log 
 \end_layout
 
@@ -4157,22 +4260,22 @@ ya proses stock take, maka untuk menghasilkan perubahan pada data bibliografi
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/tamu/Desktop/manual stable9/sdd22/image/stocktake_resyncronize.png
+	filename image/stocktake_resyncronize.png
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Resyncronize 
 \end_layout
 
@@ -4198,7 +4301,9 @@ Librarians are subversive.
  You think they're just sitting there at the desk, all quiet and everything.
  They're like plotting the revolution.
  --Michael Moore
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -4225,9 +4330,9 @@ Berisi informasi total judul koleksi, total item, total item yang sedang
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-colstat.png
@@ -4237,10 +4342,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Tampilan Statistik Koleksi 
 \end_layout
 
@@ -4249,7 +4354,7 @@ Tampilan Statistik Koleksi
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4275,9 +4380,9 @@ Berisi informasi seputar peminjaman.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-loanrep.png
@@ -4287,10 +4392,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Loan Report Menu 
 \end_layout
 
@@ -4299,7 +4404,7 @@ Loan Report Menu
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4323,9 +4428,9 @@ Berisi informasi keanggotaan, yaitu: total anggota yang terdaftar, total
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-memrep.png
@@ -4336,10 +4441,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Member Report 
 \end_layout
 
@@ -4348,7 +4453,7 @@ Member Report
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4377,9 +4482,9 @@ Menu ini menampilkan hasil rekapitulasi koleksi berdasar Classifikasi, GDM,
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep_classrep.png
@@ -4391,10 +4496,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Class Recap
 \end_layout
 
@@ -4415,14 +4520,24 @@ Pada modul Report di Senayan3-Stable10 ini, ada pengembangan untuk memudahkan
 
 \begin_layout Standard
 Pada folder 
-\begin_inset LatexCommand url
-target "/senayan3-stable10/admin/modules/reporting/custom/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/senayan3-stable10/admin/modules/reporting/custom/
+\end_layout
 
 \end_inset
 
  terdapat file 
-\begin_inset LatexCommand url
-target "customs_report_list.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+customs_report_list.inc.php
+\end_layout
 
 \end_inset
 
@@ -4441,8 +4556,13 @@ Berisi laporan/daftar judul yang dimikili oleh perpustakaan.
  Pada menu ini, dapat pula dilakukan filtering dengan menuliskan Title/ISBN,
  atau dengan menampilkan fasilitas filter lainnya.
  Caranya dengan klik 
-\begin_inset LatexCommand url
-target "Show More Filter Options"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+Show More Filter Options
+\end_layout
 
 \end_inset
 
@@ -4455,9 +4575,9 @@ target "Show More Filter Options"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-title.png
@@ -4468,10 +4588,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Laporan Judul 
 \end_layout
 
@@ -4480,7 +4600,7 @@ Laporan Judul
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4499,8 +4619,13 @@ Berisi laporan/daftar item yang dimikili oleh perpustakaan.
  Pada menu ini, dapat pula dilakukan filtering dengan menuliskan Title/ISBN,
  atau dengan menampilkan fasilitas filter lainnya.
  Caranya dengan klik 
-\begin_inset LatexCommand url
-target "Show More Filter Options"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+Show More Filter Options
+\end_layout
 
 \end_inset
 
@@ -4508,8 +4633,13 @@ target "Show More Filter Options"
  Fasilitas filter yang tersedia adalah: Title/ISBN, Item Code, Classification,
  Collection Type, Item Status, Location.
  Fasilitas filter ini dapat di sembunyikan dengan klik 
-\begin_inset LatexCommand url
-target "Hide Filter Option"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+Hide Filter Option
+\end_layout
 
 \end_inset
 
@@ -4520,9 +4650,9 @@ target "Hide Filter Option"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-item.png
@@ -4532,10 +4662,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Laporan Item Title List 
 \end_layout
 
@@ -4544,7 +4674,7 @@ Laporan Item Title List
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4569,7 +4699,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
@@ -4581,10 +4711,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Item Usage
 \end_layout
 
@@ -4593,7 +4723,7 @@ Item Usage
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4619,7 +4749,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
@@ -4630,10 +4760,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Loan by Class
 \end_layout
 
@@ -4642,7 +4772,7 @@ Loan by Class
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4669,7 +4799,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-member.png
@@ -4680,10 +4810,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Laporan Member List 
 \end_layout
 
@@ -4692,7 +4822,7 @@ Laporan Member List
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4715,7 +4845,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-hystori.png
@@ -4726,10 +4856,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Loan list by Member 
 \end_layout
 
@@ -4753,8 +4883,13 @@ Berisi laporan/daftar sejarah peminjaman perpustakaan.
  Pada menu ini, dapat pula dilakukan filtering dengan menuliskan Member
  ID/Member Name, atau dengan menampilkan fasilitas filter lainnya.
  Caranya dengan klik 
-\begin_inset LatexCommand url
-target "Show More Filter Options"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+Show More Filter Options
+\end_layout
 
 \end_inset
 
@@ -4767,7 +4902,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-loanhys.png
@@ -4778,10 +4913,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Laporan Loan History 
 \end_layout
 
@@ -4790,7 +4925,7 @@ Laporan Loan History
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4815,7 +4950,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep-overdu.png
@@ -4826,10 +4961,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Laporan Overdue 
 \end_layout
 
@@ -4838,7 +4973,7 @@ Laporan Overdue
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4870,7 +5005,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/rep_staffactv.png
@@ -4882,10 +5017,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Staff Activity
 \end_layout
 
@@ -4945,7 +5080,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/serial-subscribe-baru.png
@@ -4957,10 +5092,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Pembuatan kardex
 \end_layout
 
@@ -5016,7 +5151,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/serial-inisalisasi-sukses.png
@@ -5028,10 +5163,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Penyimpanan Kardex
 \end_layout
 
@@ -5051,7 +5186,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/serial-daftar-langganan.png
@@ -5063,10 +5198,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Kardex yang tersimpan
 \end_layout
 
@@ -5111,7 +5246,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/serial-kardex.png
@@ -5123,10 +5258,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Mengisi Kardex
 \end_layout
 
@@ -5157,7 +5292,9 @@ System
 The library is an arena of possibility, opening both a window into the soul
  and a door onto the world.
  --Rita Dove
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -5189,7 +5326,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-config1.png
@@ -5200,10 +5337,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Konfigurasi Global Senayan 
 \end_layout
 
@@ -5212,7 +5349,7 @@ Konfigurasi Global Senayan
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5257,7 +5394,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-conten.png
@@ -5268,10 +5405,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Konfigurasi Menu Content secara default 
 \end_layout
 
@@ -5291,7 +5428,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-adconten.png
@@ -5301,10 +5438,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Menambah Content
 \end_layout
 
@@ -5324,7 +5461,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-cont-tampil.png
@@ -5334,10 +5471,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Tampilan conten yang baru di buat
 \end_layout
 
@@ -5357,7 +5494,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-tamp-con 1.png
@@ -5367,10 +5504,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 URL untuk menampilkan content
 \end_layout
 
@@ -5392,8 +5529,13 @@ Silakan melihat URL untuk menampilkan content di atas.
 \end_layout
 
 \begin_layout Standard
-\begin_inset LatexCommand url
-target "http://localhost/senayan3-stable9/index.php?p=pustakawan"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://localhost/senayan3-stable9/index.php?p=pustakawan
+\end_layout
 
 \end_inset
 
@@ -5413,8 +5555,13 @@ Didalamnya terdiri dari Module List (melihat daftar module), search (mencari
  module), Edit dan Delete Modul serta Add New Module (menambah module).
  Untuk menambah module, folder modul yang sudah ada diletakkan dalam folder
  
-\begin_inset LatexCommand url
-target "admin/modules/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+admin/modules/
+\end_layout
 
 \end_inset
 
@@ -5431,7 +5578,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-modulist.png
@@ -5441,10 +5588,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Module List 
 \end_layout
 
@@ -5453,7 +5600,7 @@ Module List
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5468,7 +5615,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-newmod.png
@@ -5478,10 +5625,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Add New Module 
 \end_layout
 
@@ -5490,7 +5637,7 @@ Add New Module
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5522,7 +5669,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-addsysuser.png
@@ -5532,10 +5679,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Tambah User
 \end_layout
 
@@ -5544,7 +5691,7 @@ Tambah User
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5572,7 +5719,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-usergroup.png
@@ -5582,10 +5729,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Contoh Group di Senayan 
 \end_layout
 
@@ -5594,7 +5741,7 @@ Contoh Group di Senayan
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5624,7 +5771,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-holset.png
@@ -5634,10 +5781,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Set Holiday 
 \end_layout
 
@@ -5646,7 +5793,7 @@ Set Holiday
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5661,7 +5808,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-addspechol.png
@@ -5671,10 +5818,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Add Special Holiday 
 \end_layout
 
@@ -5713,7 +5860,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-barc-awal.png
@@ -5723,10 +5870,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Form untuk membuat barcode 
 \end_layout
 
@@ -5735,7 +5882,7 @@ Form untuk membuat barcode
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5750,7 +5897,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-barcode.png
@@ -5761,10 +5908,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hasil barcode dari Barcode Generator 
 \end_layout
 
@@ -5773,7 +5920,7 @@ Hasil barcode dari Barcode Generator
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5832,7 +5979,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/sys-log.png
@@ -5842,10 +5989,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 System Logs 
 \end_layout
 
@@ -5854,7 +6001,7 @@ System Logs
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5917,7 +6064,9 @@ Master File Topic
 \color blue
 When I got my library card, that's when my life began.
  --Rita Mae Brown
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -6013,7 +6162,9 @@ Opac (Online Public Access Catalog)
 The library is not only a diary of the human race, but marks an act of faith
  in the continuity of humanity.
  --Vartan Gregorian 
-\newline
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -6061,7 +6212,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/opac.png
@@ -6071,10 +6222,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Opac
 \end_layout
 
@@ -6083,7 +6234,7 @@ Opac
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6098,7 +6249,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/opac_det.png
@@ -6108,10 +6259,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Detail Opac
 \end_layout
 
@@ -6120,7 +6271,7 @@ Detail Opac
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6135,7 +6286,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/opac_xml.png
@@ -6145,10 +6296,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 XML Opac
 \end_layout
 
@@ -6157,7 +6308,7 @@ XML Opac
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6174,22 +6325,37 @@ Custom Field Record List
 Pada Aplikasi Senayan stable 8 ini, ditambahi dengan fasilitas penampilan
  field record secara cuztomise.
  Penambahan ini dapat dilakukan dengan mengedit file 
-\begin_inset LatexCommand url
-target "custom_frontpage_record.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+custom_frontpage_record.inc.php
+\end_layout
 
 \end_inset
 
  yang terdapat pada folder template OPAC.
  Jadi jika anda ingin mengubah tampilan yang disediakan, dan anda menggunakan
  template default, anda harus mengedit file 
-\begin_inset LatexCommand url
-target "custom_frontpage_record.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+custom_frontpage_record.inc.php
+\end_layout
 
 \end_inset
 
  yang ada di 
-\begin_inset LatexCommand url
-target "template/default/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+template/default/
+\end_layout
 
 \end_inset
 
@@ -6249,7 +6415,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/multimed1.png
@@ -6260,10 +6426,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Tampilan multimedia
 \end_layout
 
@@ -6307,7 +6473,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/boolean.png
@@ -6318,10 +6484,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Boolean Logic
 \end_layout
 
@@ -6350,7 +6516,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/ad-search.png
@@ -6362,10 +6528,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Tampilan Advanced Search
 \end_layout
 
@@ -6399,8 +6565,13 @@ Pengaturan Ukuran barcode, label dan kartu anggota
 \begin_layout Standard
 Setting ukuran barcode dan label dapat dilakukan dengan melakukan editing
  file printed_settings.inc.php yang terletak di 
-\begin_inset LatexCommand url
-target "/senayan3-stable7/admin/admin_template/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/senayan3-stable7/admin/admin_template/
+\end_layout
 
 \end_inset
 
@@ -6588,8 +6759,13 @@ $barcodegen_include_border = 0;
 \begin_layout Standard
 Jika anda menginginkan setingan untuk barcode, label dan kartu anggota 
  berbeda pada tiap template, maka anda dapat mengcopi file 
-\begin_inset LatexCommand url
-target "print_settings.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+print_settings.inc.php
+\end_layout
 
 \end_inset
 
@@ -6602,8 +6778,13 @@ Pencarian di OPAC dengan kata kunci minimal 3 huruf?
 
 \begin_layout Enumerate
 Buka file my.ini yang terletak di 
-\begin_inset LatexCommand url
-target "/mysql/my.ini"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/mysql/my.ini
+\end_layout
 
 \end_inset
 
@@ -6635,7 +6816,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/3.png
@@ -6645,10 +6826,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Menghapus index title_ft
 \end_layout
 
@@ -6673,7 +6854,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/4.png
@@ -6683,10 +6864,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Penambahan Index MySql
 \end_layout
 
@@ -6695,7 +6876,7 @@ Penambahan Index MySql
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6714,7 +6895,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/2.png
@@ -6724,10 +6905,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hasil Penambahan Index MySql
 \end_layout
 
@@ -6736,7 +6917,7 @@ Hasil Penambahan Index MySql
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6806,8 +6987,13 @@ Kedua, berikut ini cara-cara melakukan upgrade secara teknis.
 \lang english
 1.
  buka browser, ketikkan alamat 
-\begin_inset LatexCommand url
-target "http://localhost/phpmyadmin"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://localhost/phpmyadmin
+\end_layout
 
 \end_inset
 
@@ -6823,7 +7009,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -6837,12 +7023,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Membuka phpmyadmin
@@ -6880,7 +7066,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -6893,12 +7079,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Pilih database senayan
@@ -6929,7 +7115,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -6941,12 +7127,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Pilih tab import
@@ -6977,7 +7163,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -6989,12 +7175,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Klik Browse
@@ -7015,21 +7201,36 @@ Klik Browse
 \lang english
 6.
  cari file 
-\begin_inset LatexCommand url
-target "upgrade_stable3.sql"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+upgrade_stable3.sql
+\end_layout
 
 \end_inset
 
  (jika anda menggunakan Senayan3-Stable2) dan cari file 
-\begin_inset LatexCommand url
-target "upgrade_stable4.sql"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+upgrade_stable4.sql
+\end_layout
 
 \end_inset
 
  (jika anda menggunakan Senayan3-Stable4), (harus bertingkat).
  file tersebut berada di path 
-\begin_inset LatexCommand url
-target "../upgrade/old_sql/.."
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+../upgrade/old_sql/..
+\end_layout
 
 \end_inset
 
@@ -7044,7 +7245,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -7057,12 +7258,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Pilih data untuk upgrade
@@ -7097,28 +7298,48 @@ Pilih data untuk upgrade
 \lang english
 9.
  lalu lakukan editing ulang pada file 
-\begin_inset LatexCommand url
-target "sysconfig.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+sysconfig.inc.php
+\end_layout
 
 \end_inset
 
  yang ada di Senayan3-Stable9.
  sesuaikan konfigurasinya dengan 
-\begin_inset LatexCommand url
-target "sysconfig.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+sysconfig.inc.php
+\end_layout
 
 \end_inset
 
  yang ada pada Senayan versi lama yang anda gunakan.
  Sesuaikan pula letak file 
-\begin_inset LatexCommand url
-target "mysqldump"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+mysqldump
+\end_layout
 
 \end_inset
 
  anda (letakknya juga di file 
-\begin_inset LatexCommand url
-target "sysconfig.inc.php"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+sysconfig.inc.php
+\end_layout
 
 \end_inset
 
@@ -7133,7 +7354,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -7145,12 +7366,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Edit sysconfig.inc.php
@@ -7182,7 +7403,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -7194,12 +7415,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Copi folder FILE dan IMAGES
@@ -7231,7 +7452,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 
 \lang english
@@ -7243,12 +7464,12 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang english
 Tampilan Senayan Versi terbaru
@@ -7315,36 +7536,66 @@ Petunjuk berikut ini hanya memberikan pengantar kilat untuk menambahkan
  terjemahan bahasa di Senayan.
  Untuk lebih lengkapnya penjelasan tentang membuat aplikasi banyak bahasa
  bisa ditemukan di
-\newline
+\begin_inset Newline newline
+\end_inset
 
-\begin_inset LatexCommand url
-target "http://carsonified.com/blog/features/webapps/give-your-web-"
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://carsonified.com/blog/features/webapps/give-your-web-
+\end_layout
 
 \end_inset
 
 
-\newline
+\begin_inset Newline newline
+\end_inset
 
-\begin_inset LatexCommand url
-target "app-international-appeal/"
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+app-international-appeal/
+\end_layout
 
 \end_inset
 
  
-\newline
+\begin_inset Newline newline
+\end_inset
+
 dan di
-\newline
+\begin_inset Newline newline
+\end_inset
 
-\begin_inset LatexCommand url
-target "http://carsonified.com/blog/dev/give-your-web-app-international-"
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://carsonified.com/blog/dev/give-your-web-app-international-
+\end_layout
 
 \end_inset
 
  
-\newline
+\begin_inset Newline newline
+\end_inset
 
-\begin_inset LatexCommand url
-target "appeal-part-ii/"
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+appeal-part-ii/
+\end_layout
 
 \end_inset
 
@@ -7358,8 +7609,13 @@ Langkah pertama adalah mengunduh program PoEDIT
 \begin_deeper
 \begin_layout Itemize
 Unduh PoEdit dari 
-\begin_inset LatexCommand url
-target "http://www.poedit.net/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.poedit.net/
+\end_layout
 
 \end_inset
 
@@ -7405,26 +7661,46 @@ bahasa
  Meskipun tidak sangat diperlukan untuk menggunakan konvensi ini, akan lebih
  baik jika bisa mengikuti secara konsisten.
  Daftar kode-kode bahasa dapat dilihat di 
-\begin_inset LatexCommand url
-target "http://www.gnu.org/software/gettext"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gnu.org/software/gettext
+\end_layout
 
 \end_inset
 
 
-\begin_inset LatexCommand url
-target "/manual/gettext.html#Usual-Language-Codes"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/manual/gettext.html#Usual-Language-Codes
+\end_layout
 
 \end_inset
 
  dan kode singkatan untuk negara di 
-\begin_inset LatexCommand url
-target "http://www.gnu.org/software/"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gnu.org/software/
+\end_layout
 
 \end_inset
 
 
-\begin_inset LatexCommand url
-target "gettext/manual/gettext.html#Country-Codes"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+gettext/manual/gettext.html#Country-Codes
+\end_layout
 
 \end_inset
 
@@ -7493,14 +7769,24 @@ Tab "Project info":
  Jika bahasa Anda hanya memiliki satu bentuk jamak bentuk menggunakan: nplurals
  = 2; plural = n! = 1; Untuk bahasa lain Anda dapat menemukan daftar kemungkinan
  bentuk jamak di 
-\begin_inset LatexCommand url
-target "http://translate.sourceforge.net"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://translate.sourceforge.net
+\end_layout
 
 \end_inset
 
 
-\begin_inset LatexCommand url
-target "/wiki/l10n/pluralforms"
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/wiki/l10n/pluralforms
+\end_layout
 
 \end_inset
 
@@ -7522,9 +7808,13 @@ Tab "Kata kunci"
 
 \begin_layout Itemize
 Tambahkan dua baris: 
-\newline
+\begin_inset Newline newline
+\end_inset
+
 __ (Dua garis bawah)
-\newline
+\begin_inset Newline newline
+\end_inset
+
 _ngettext
 \end_layout
 
@@ -7644,13 +7934,13 @@ Ini hanyalah sebuah daftar kecil dengan kata-kata / frase terjemahan yang
 \begin_inset Tabular
 <lyxtabular version="3" rows="43" columns="2">
 <features islongtable="true">
-<column alignment="left" valignment="top" leftline="true" width="0">
-<column alignment="left" valignment="top" leftline="true" rightline="true" width="0">
-<row topline="true">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7668,7 +7958,7 @@ add =>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7688,7 +7978,7 @@ loan =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7706,7 +7996,7 @@ Are You Sure Want to =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7726,7 +8016,7 @@ Loan Limit =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7744,7 +8034,7 @@ Authority Files =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7764,7 +8054,7 @@ Location =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7782,7 +8072,7 @@ Authority Type =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7802,7 +8092,7 @@ login =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7820,7 +8110,7 @@ bibliographic =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7840,7 +8130,7 @@ Lookup Files =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7858,7 +8148,7 @@ cant be empty / can not be empty =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7878,7 +8168,7 @@ make sure =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7896,7 +8186,7 @@ Call Number =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7916,7 +8206,7 @@ member ID =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7934,7 +8224,7 @@ cancel =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7954,7 +8244,7 @@ Member Type =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7972,7 +8262,7 @@ circulation =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7992,7 +8282,7 @@ Member Type Name =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8010,7 +8300,7 @@ check =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8030,7 +8320,7 @@ Membership =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8048,7 +8338,7 @@ checkout (items) =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8068,7 +8358,7 @@ module =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8086,7 +8376,7 @@ Code =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8106,7 +8396,7 @@ must be set = cant be empty =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8124,7 +8414,7 @@ Collection Type =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8144,7 +8434,7 @@ overdue =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8162,7 +8452,7 @@ confirm =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8182,7 +8472,7 @@ confirm =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8200,7 +8490,7 @@ content =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8220,7 +8510,7 @@ Override(Overide) =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8238,7 +8528,7 @@ copies = items =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8258,7 +8548,7 @@ pending =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8276,7 +8566,7 @@ Credit =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8296,7 +8586,7 @@ PERMITTED =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8314,7 +8604,7 @@ data =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8334,7 +8624,7 @@ Place =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8352,7 +8642,7 @@ database backup =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8372,7 +8662,7 @@ previous =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8390,7 +8680,7 @@ Debit =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8410,7 +8700,7 @@ privileges =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8428,7 +8718,7 @@ due date =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8448,7 +8738,7 @@ promote(ed) =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8466,7 +8756,7 @@ expired =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8486,7 +8776,7 @@ quick return =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8504,7 +8794,7 @@ Expiry Date =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8524,7 +8814,7 @@ Real Name =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8542,7 +8832,7 @@ Export XXX Data To CSV format =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8562,7 +8852,7 @@ Reborrow =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8580,7 +8870,7 @@ fines =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8600,7 +8890,7 @@ repository =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8618,7 +8908,7 @@ Forbidden =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8638,7 +8928,7 @@ Required =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8656,7 +8946,7 @@ frequency =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8676,7 +8966,7 @@ reservation =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8694,7 +8984,7 @@ gmd =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8714,7 +9004,7 @@ return =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8732,7 +9022,7 @@ group =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8752,7 +9042,7 @@ section =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8770,7 +9060,7 @@ history =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8790,7 +9080,7 @@ stock take =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8808,7 +9098,7 @@ holiday =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8828,7 +9118,7 @@ Subject =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8846,7 +9136,7 @@ id =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8866,7 +9156,7 @@ Subject Type =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8884,7 +9174,7 @@ image thumbnail =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8904,7 +9194,7 @@ Subscription =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8922,7 +9212,7 @@ Import Data to XXX from CSV file =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8942,7 +9232,7 @@ supplier =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8960,7 +9250,7 @@ initialize =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8980,7 +9270,7 @@ System Users =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -8998,7 +9288,7 @@ Inventory Code =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9018,7 +9308,7 @@ template =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9036,7 +9326,7 @@ item = copies =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9056,7 +9346,7 @@ transaction =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9074,7 +9364,7 @@ Item Code =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9094,7 +9384,7 @@ uncheck =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9112,7 +9402,7 @@ label =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9132,7 +9422,7 @@ update =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Labels => 
 \end_layout
 
@@ -9141,7 +9431,7 @@ Labels =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9161,7 +9451,7 @@ user/user name =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9179,7 +9469,7 @@ library automatation (system) =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9199,7 +9489,7 @@ view =>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9217,7 +9507,7 @@ library members =>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9233,11 +9523,11 @@ you =>
 \end_inset
 </cell>
 </row>
-<row bottomline="true">
+<row>
 <cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9255,7 +9545,7 @@ list =>
 <cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -9298,7 +9588,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bc-8-1.png
@@ -9309,10 +9599,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Pencetakan barcode koleksi
 \end_layout
 
@@ -9332,7 +9622,7 @@ wide false
 sideways false
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bc-8-2.png
@@ -9343,10 +9633,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Pencetakan barcode di menu Systems
 \end_layout
 
@@ -9366,7 +9656,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/bc-8-3.png
@@ -9377,10 +9667,10 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Caption
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Pencetakan barcode di Kartu anggota
 \end_layout
 
