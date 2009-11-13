@@ -1,4 +1,4 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -941,7 +941,7 @@ shell> mysql -u root -p senayandb < install/senayan.sql
 \end_layout
 
 \begin_layout LyX-Code
-shell> mysql -u root -p senayandn < install/sample_data.sql
+shell> mysql -u root -p senayandb < install/sample_data.sql
 \end_layout
 
 \begin_layout Standard
@@ -1228,14 +1228,6 @@ Sekarang coba akses ke .
  Senayan sudah bisa digunakan.
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section
 Instalasi Portable Senayan di Windows
 \end_layout
@@ -1284,7 +1276,7 @@ Kopi file psenayan*.zip ke root directory/folder
 \end_layout
 
 \begin_layout Standard
-Kopi file 
+Copy file 
 \begin_inset Flex URL
 status collapsed
 
@@ -1295,7 +1287,7 @@ psenayan-x.x.zip
 
 \end_inset
 
- (misalnya psenayan-3.0.zip, silakan dapatkan rilis terbaru Psenayan di 
+ (misalnya psenayan-3.0.zip, silakan dapatkan rilis terbaru psenayan di 
 \begin_inset Flex URL
 status collapsed
 
@@ -1312,7 +1304,7 @@ http://senayan.diknas.go.id
  atau d:
 \backslash
 .
- Jangan letakkan didalam direktori.
+ Jangan letakkan didalam direktori (folder)
 \end_layout
 
 \begin_layout Standard
