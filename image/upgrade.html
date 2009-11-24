@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.4  (Linux)">
+	<META NAME="CREATED" CONTENT="20090126;10334300">
+	<META NAME="CHANGED" CONTENT="20090126;10394200">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 8.5in 11in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		H1 { margin-bottom: 0.08in }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "DejaVu Sans"; font-size: 16pt }
+		H1.ctl { font-family: "DejaVu Sans"; font-size: 16pt }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1 CLASS="western" ALIGN=CENTER STYLE="page-break-before: always"><FONT FACE="Verdana, sans-serif"><B>Tutorial
+Upgrade Aplikasi Perpustakaan Senayan</B></FONT></H1>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif">Artikel
+singkat ini membahas bagaimana melakukan upgrade aplikasi
+Perpustakaan Senayan  (<A HREF="http://senayan.diknas.go.id/">http://senayan.diknas.go.id</A>).
+Yaitu dari versi senayan3-stable4 ke senayan3-stable5. Tetapi cara
+upgrade ini berlaku untuk versi-versi yang lain juga. Untuk
+kemudahan, digunakan platform PHP dan MySQL dari Portable Senayan 3.3
+dimana sudah ada senayan3-stable4 didalamnya. Tetapi cara yang
+ditunjukkan disini berlaku universal, tidak spesifik hanya pada
+portable senayan. Oiya, browser yang digunakan dalam tutorial ini
+adalah Mozilla Firefox.</FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><B>First
+Thing First: Back-up!</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Yesterday
+– The Beatles</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Yesterday,</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>All
+those backups seemed a waste of pay</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Now
+my database has gone away</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Oh
+I believe in yesterday..... </I></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Suddenly,</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>There's
+not half the files there used to be</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>And
+there's a milestone hanging over me</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>The
+system crashed so suddenly</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>I
+pushed something wrong</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>What
+it was I could not say</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Now
+all my data's gone</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>and
+I long for yesterday-ay-ay-ay</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Yesterday,</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>The
+need for back-ups seemed so far away</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>I
+knew my data was all here to stay</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><I>Now
+I believe in yesterday</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Sebelum
+terjadi musibah yang tidak diinginkan, misalnya harddisk rusak,
+biasakan selalu melakukan back-up. Data elektronik adalah data yang
+rentan, karena itu aktifitas back-up merupakan salah satu kewajiban
+bila anda merasa data yang anda gunakan adalah penting. Simpan hasil
+back-up di tempat/komputer yang terpisah. Untuk kemudahan contoh
+dalam artikel ini, backup disimpan di komputer yang sama.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Untuk
+aplikasi Senayan, ada 2 bagian yang harus di backup. Pertama, folder
+aplikasi, kedua database MySQL. Untuk membackup folder aplikasi,
+cukup kopi dan paste serta berikan nama yang berbeda dari folder
+senayan3-stable4 yang terdapat di psenayan/apache/htdocs.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m65269b.gif" NAME="graphics65" ALIGN=LEFT WIDTH=257 HEIGHT=142 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Untuk
+membackup database MySQL, dari phpMyAdmin, login sebagai root, buka
+database Senayan dan pilih tab  Export. Jangan lupa cek pilihan &quot;Save
+as file&quot; kemudian klik &quot;Go&quot;.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m80d5f6e.gif" NAME="graphics66" ALIGN=LEFT WIDTH=599 HEIGHT=564 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Akan
+muncul pop up menu, pilih Save File, dan klik OK.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_2a84916.gif" NAME="graphics67" ALIGN=LEFT WIDTH=320 HEIGHT=252 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Juga
+bisa melakukan back-up database melalui command-line.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_1b8cca7a.gif" NAME="graphics71" ALIGN=LEFT WIDTH=665 HEIGHT=127 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m24e312e8.gif" NAME="graphics68" ALIGN=LEFT WIDTH=258 HEIGHT=153 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2><B>Proses
+Upgrade Senayan</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Download
+senayan3-stable5.tar.gz dari <A HREF="http://senayan.diknas.go.id/">http://senayan.diknas.go.id</A>.
+Letakkan di folder htdocs dan kemudian ekstrak. Nanti akan terbentuk
+folder senayan3-stable5.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_747b8268.gif" NAME="graphics69" ALIGN=LEFT WIDTH=500 HEIGHT=429 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_ed996a9.gif" NAME="graphics70" ALIGN=LEFT WIDTH=366 HEIGHT=184 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Masuk
+ke folder senayan3-stable5, dan buka file sysconfig.inc.php dengan
+text editor semacam notepad atau wordpad. Perhatikan baris berikut
+ini:</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">define('DB_USERNAME',
+'senayanuser');</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in; font-weight: medium"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">define('DB_PASSWORD',
+'password_senayanuser');</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Dalam
+default distribusi senayan, sudah dibuatkan username “senayanuser”
+dengan password “password_senayanuser” (tanpa tanda petik). Untuk
+pertimbangan keamanan, sangat disarankan untuk merubahnya. Di
+Portable Senayan, ada dua cara untuk merubah password di MySQL. Cara
+pertama, menggunakan phpMyAdmin. Login Ke phpMyAdmin dengan user
+“root”. Buka database “mysql” kemudian buka tabel “user”.
+Kemudian klik icon pensil yang terdapat pada baris User senayanuser
+untuk meng-edit profil senayanuser.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m1c7b4dbe.gif" NAME="graphics72" ALIGN=LEFT WIDTH=665 HEIGHT=453 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Pilih
+Fungsi PASSWORD pada kolom Function. Kemudian di kolom Value untuk
+baris field Password, isikan password baru yang diinginkan.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m3cac1fe9.gif" NAME="graphics73" ALIGN=LEFT WIDTH=665 HEIGHT=100 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Perubahan
+password tidak langsung bisa digunakan. Agar password baru bisa mulai
+digunakan, pada phpMyAdmin klik tab SQL, ketik “FLUSH PRIVILEGES”
+dan klik Go. Atau dengan me-restart mysql dengan double-click
+mysql_stop.bat kemudian mysql_start.bat.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m7ccd9faa.gif" NAME="graphics74" ALIGN=LEFT WIDTH=665 HEIGHT=307 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Cara
+lain merubah password di mysql adalah melalui command-line. </FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_435f9399.gif" NAME="graphics75" ALIGN=LEFT WIDTH=665 HEIGHT=292 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Hal
+yang sama juga berlaku jika ingin mengubah default password milik
+user root. Jangan lupa edit sysconfig.inc.php dan sesuaikan dengan
+password yang baru.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Berikutnya
+meng-update struktur database senayan agar compliant dengan
+senayan3-stable5. Melalui phpMyAdmin, login sebagai senayanuser atau
+root. Buka database senayan dan klik tab SQL. Dengan editor teks
+(notepad atau wordpad), bukan file upgrade_stable5.sql yang terdapat
+di folder psenayan\apache\htdocs\senayan3-stable5\sql\upgrade.
+Kemudian kopi semua teks yang ada.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_5efa0e82.gif" NAME="graphics76" ALIGN=LEFT WIDTH=665 HEIGHT=263 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Paste-kan
+ke phpMyAdmin dan klik Go.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m3c771887.gif" NAME="graphics80" ALIGN=LEFT WIDTH=665 HEIGHT=306 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Jika
+berhasil akan ada message “Your SQL query has been executed
+successfully”.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Terakhir
+adalah meng-copy folder “images” dan “files” dari folder
+senayan3-stable4 dan paste ke folder senayan3-stable5. Jika ada pesan
+“Confirm Folder Replace” (This folder already contains a folder
+named 'images'), pilih “Yes to All” (overwrite).</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m7e429c30.gif" NAME="graphics78" ALIGN=LEFT WIDTH=489 HEIGHT=381 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_4127e9d7.gif" NAME="graphics79" ALIGN=LEFT WIDTH=447 HEIGHT=310 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Oke
+sekarang Senayan sudah selesai di Upgrade. Silahkan mencoba login
+kembali ke aplikasi Senayan.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="upgrade_html_m5705347f.gif" NAME="graphics77" ALIGN=LEFT WIDTH=665 HEIGHT=367 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Setelah
+berhasil login jika masih ada error, biasanya terkait:</FONT></FONT></P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Folder
+	“images” dan “files” tidak bisa ditulis, artinya anda harus
+	memberikan web server akses tulis ke folder tersebut. Hal ini jarang
+	terjadi di Windows, biasanya terjadi di Linux karena terkait file
+	permission. Untuk mengubahnya, sebagai root di Linux, jalankan
+	perintah “chmod -R 777 files images”. Untuk lebih detailnya
+	silahkan baca manual Senayan.</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Error
+	“The PATH for mysqldump program is not right!”. Itu karena
+	program mysqldump (yang dibutuhkan Senayan untuk melakukan backup)
+	belum di link dengan baik. Jika menggunakan Portable Senayan, edit
+	file sysconfig.inc.php dan ubah baris “$sysconf['mysqldump'] =
+	'/usr/local/server/mysql5/bin/mysqldump';” menjadi
+	“$sysconf['mysqldump'] = '/psenayan/mysql/bin/mysqldump.exe';”</FONT></FONT></P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Agar
+ketika orang mengakses otomatis tidak lagi di-forward ke folder
+senayan3-stable4 tapi ke senayan3-stable5, harus meng-edit file
+index.php (dengan notepad/wordpad) yang terdapat di
+psenayan\apache\htdocs.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Ubah
+baris:</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">&lt;?php
+header (&quot;location: senayan3-stable4/&quot;); ?&gt;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>menjadi:</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">&lt;?php
+header (&quot;location: senayan3-stable5/&quot;); ?&gt;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Selamat
+mencoba!</FONT></FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><FONT FACE="Verdana, sans-serif"><FONT SIZE=2>Penulis:
+Hendro Wicaksono (Senayan Lead Developer, hendrowicaksono@yahoo.com)</FONT></FONT></P>
+</BODY>
+</HTML>
