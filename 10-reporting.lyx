@@ -263,10 +263,14 @@ Customs Reccapitulations
 \begin_layout Standard
 
 \lang bahasa
-Menu ini menampilkan hasil rekapitulasi koleksi berdasar Classifikasi, GMD,
- Colection Type atau Language.
+Menu ini menampilkan hasil rekapitulasi koleksi berdasar Classification,
+ GMD, Colection Type atau Language.
  Pilihan ini dapat kita tentukan dengan memilih filter rekapitulasi yang
  tersedia.
+ Senayan juga telah mendukung rekap untuk klasifikasi yang bukan didasarkan
+ pada angka desimal.
+ Misalnya REF untuk referensi.
+ 
 \end_layout
 
 \begin_layout Standard
