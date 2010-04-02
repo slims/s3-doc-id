@@ -1,0 +1,359 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+
+\lang bahasa
+Serial Control
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Fungsi baru dari SENAYAN stable 10 ini digunakan untuk mengelola koleksi
+ serial/majalah/terbitan berseri yang dilanggan oleh perpustakaan.
+ Modul Serial Control sudah mendukung perpustakaan untuk mengelola lebih
+ dari satu kopi langganan (dari lebih dari satu vendor) untuk setiap judul
+ majalah.
+ Fungsi Serial Control dapat diakses lewat menu administrasi dengan mengklik
+ Serial Control.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Modul Serial Control baru berjalan jika data ada bibliografi untuk judul
+ majalah yang dilanggan.
+ Informasi yang membedakan antara data bibliografi majalah dengan jenis
+ dokumen lainnya adalah frekuensi/kala terbit serial.
+ Jika tidak ada data dalam tabel bibliografi yang memiliki data kala terbit
+ maka fungsi ini tidak akan pernah berfungsi.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Tampilan awal modul ketika diaktifkan akan menunjukkan daftar majalah yang
+ dimiliki perpustakaan meliputi judul dan kala terbitnya.
+ Perbaikan data bibliografi serial bisa dilakukan untuk mengklik judul serial.
+ Jendela data bibliografi akan ditampilkan untuk memberi kesempatan perbaikan.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Untuk menampilkan daftar item yang dilanggan gunakan icon folder disebelah
+ kanan atas daftar.
+ Penggunaan kardex harus dimulai dengan melakukan inisasi terlebih dahulu.
+ Inisialisasi data kedatangan majalah yang dilanggan dimaksudkan untuk mengident
+ifikasi awal jumlah item yang diharapkan akan diterima, perkiraan waktu
+ datang item/edisi.
+ Klik ikon di pojok kanan atas daftar untuk memulai inisialisasi kardex.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/serial-subscribe-baru.png
+	scale 40
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Pembuatan kardex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Subscription Start: isi dengan tanggal awal/item berlangganan yang akan
+ diterima/tiba di perpustakaan.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Total Exemplar Expected: isi dengan jumlah total eksemplar yang diharapkan
+ diterima perpustakaan dalam jangka waktu berlangganan.
+ Untuk berlangganan setahun dengan kala terbit bulanan maka isi dengan 12.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Period Name: berikan penamaan jangka waktu berlangganan untuk memberikan
+ pembedaan antara periode.
+ Juga bisa diberikan nama untuk membedakan langganan kopi kesatu, kedua,
+ dst.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Subscription Notes: catatan penting tetang langganan yang berjalan.
+ GMD: jika diperlukan, ganti GMD dengan yang sesuai dari item yang dilanggan
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Click 'Save' untuk menyimpan data inisialisasi.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Jika proses penyimpanan data kardex berhasil, jendela berikut akan ditampilkan.
+ Klik 'OK' untuk kembali menampilkan daftar berlangganan untuk judul bersangkuta
+n.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/serial-inisalisasi-sukses.png
+	scale 50
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Penyimpanan Kardex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/serial-daftar-langganan.png
+	scale 40
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Kardex yang tersimpan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Memulai mengisi Kardex
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Ketika serial/majalah yang dilanggan tiba diperpustakaan, buka daftar kardek
+ dengan mengklik link “View/Edit Kardex Detail”.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Kardex SENAYAN menyediakan 4 kolom informasi: 1.tanggal perkiraan kedatangan
+ Tanggal ini otomasis diisi pada saat inisialisasi kardex.
+ Jumlah baris yang ditampilkan sesuai dengan jumlah eksemplar yang di isi
+ pada saat inisialisai.
+ Jika dibutuhkan, tanggal ini dapat diperbaiki dengan mengklik ikon kalender
+ 2.tanggal diterima perpustakaan Ketika majalah diterima di perpustakaan
+ isi kolom “date received” dengan tanggal terima majalah 3.nomor urut edisi
+ yang diterima Penomoran edisi majalah bisa di lengkapi di kolom penomoran
+ untuk memberikan informasi yang lebih lengkap tentang edisi yang diterima
+ 4.catatan Jika diperlukan, catatan bisa digunakan untuk mengidentifikasi
+ siapa yang menerima edisi, kondisi dokumen ketika diterima dan sebagainya.
+ Klik link 'CLOSE' jika sudah mengupdate tanggal terima dan lanjutkan dengan
+ edisi judul majalah baru lainnya.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/serial-kardex.png
+	scale 40
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Mengisi Kardex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Catatan: Jangan lupa untuk mengklik tombol 'Save' ketika melakukan perubahan
+ data kardex.
+ Jika tidak perubahan yang telah dilakukan akan diabaikan.
+\end_layout
+
+\end_body
+\end_document
