@@ -1511,14 +1511,15 @@ Menu Import Data
 
 \lang bahasa
 Menu import data ini digunakan untuk mengambil data bibliografi dari luar
- senayan dalam format csv, kemudian dimasukkan dalam program aplikasi Senayan.
+ senayan dalam format csv (atau dari database Senayan yang sudah di eksport
+ dalam bentuk .csv), kemudian dimasukkan dalam program aplikasi Senayan.
  
 \end_layout
 
 \begin_layout Standard
 
 \lang bahasa
-Untuk petunjuk import data, secara lebih ditail silakan baca pada manual
+Untuk petunjuk import data, secara lebih detail silakan baca pada manual
  konversi data dari Athenaeum ke Senayan dan dari SIPISIS ke Senayan.
  Manual konversi ini dapat anda peroleh di 
 \begin_inset Flex URL
@@ -1789,13 +1790,36 @@ Start from record: Record pertama Proses Import dimulai
 \begin_layout Section
 
 \lang bahasa
-Item Import
+Item Eksport
+\end_layout
+
+\begin_layout Standard
+Format hasil eksport data item pada Senayan adalah sebagai berikut:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+"B00001","","Reference","INV/B00001","0000-00-00","","","My Library","0000-00-00
+","","","1","","500000","Rupiah","0000-00-00","2008-12-26 22:11:10","2008-12-26
+ 22:14:13","Ajax : creating Web pages with asynchronous JavaScript and XML"
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Format diatas daat dijadikan acuan jika ingin memasukkan data .csv ke Senayan.
+ Caranya adalah dengan menyesuaikan format .csvnya.
 \end_layout
 
 \begin_layout Section
 
 \lang bahasa
-Item Eksport
+Item Import
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

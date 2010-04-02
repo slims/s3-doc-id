@@ -173,12 +173,59 @@ Mengaktifkan UCS
 \end_layout
 
 \begin_layout Standard
-Untuk mengaktifkan fitur UCS pada Senayan, dapat dilakukan dengan langkah
- sebagai berikut:
+Fitur UCS ada di bawah master senayan, pada senayan3-stable14 ada pada /senayan3
+-stable14/ucs.
+ UCS menggunakan library Simbio yang ada di master Senayan, sehingga ucs
+ tidak bisa diinstall berbeda dari master senayan.
+ Untuk mengaktifkan fitur UCS pada Senayan, dapat dilakukan dengan langkah
+ di bawah ini:
 \end_layout
 
 \begin_layout Subsection
 Membuat database UCS
+\end_layout
+
+\begin_layout Standard
+UCS menggunakan database yang berbeda dengan Senayan.
+ Struktur database UCS dapat diinstall dengan mengambil file .sql yang ada
+ di /senayan3-st14/ucs/install/ucs.sql.
+\end_layout
+
+\begin_layout Subsection
+Seting file ucsysconfig.inc.php
+\end_layout
+
+\begin_layout Standard
+Pada ucsysconfig.inc.php harus didefinisikan host, port, nama database, username
+ dan password.
+ Pendefinisian ini didasarkan pada database yang dibuat pada pada langkah
+ 1.1.1.
+ File ucsysconfig.inc.php terletak pada /senayan3-st14/ucs/
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+define('DB_HOST', 'localhost'); 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+define('DB_PORT', '3306'); 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+define('DB_NAME', 'ucs'); 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+define('DB_USERNAME', 'root'); 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+define('DB_PASSWORD', 'admin');
 \end_layout
 
 \begin_layout Subsection
@@ -191,13 +238,39 @@ Letak dari file ini ada di dalam folder utama Senayan.
  konfigurasi sebagai berikut:
 \end_layout
 
-\begin_layout LyX-Code
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "ucnode.txt"
+\begin_layout Standard
+$ucs['serveraddr'] = 'http://127.0.0.1/senayan3-stable14/ucs'; 
+\end_layout
 
+\begin_layout Standard
+$node['id'] = 'slims-node'; 
+\end_layout
+
+\begin_layout Standard
+$node['password'] = '2325f677e21c1613909c953eb03c57352259cc5d'; // default
+ is s0beautifulday 
+\end_layout
+
+\begin_layout Standard
+$node['name'] = 'SLiMS Library'; // node name
+\end_layout
+
+\begin_layout Standard
+Serveraddr merupakan alamat server dari UCS, pada akhir url tidak boleh
+ ditutup dengan slash 
+\begin_inset Quotes eld
 \end_inset
 
+/
+\begin_inset Quotes erd
+\end_inset
+
+, untuk penggunanaan testing lokal di Windows gunakan 127.0.0.1 jangan menggunakan
+ localhost.
+ Id merupakan 
+\end_layout
+
+\begin_layout LyX-Code
 
 \end_layout
 
@@ -205,18 +278,80 @@ filename "ucnode.txt"
 Seting file ucserver.inc.php
 \end_layout
 
-\begin_layout Subsection
-Seting file ucsysconfig.inc.php
+\begin_layout Standard
+File ini terletak pada /senayan3-st14/ucs/ucserver.inc.php.
+ Pada file ini terdapat dua jenis konfigurasi, yaitu konfigurasi server
+ dan konfigurasi node.
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand verbatiminput
-filename "ucssysconfig.txt"
 
-\end_inset
+\emph on
+Berikut adalah konfigurasi server:
+\end_layout
 
+\begin_layout Standard
+$sysconf['server'] = array( 
+\end_layout
 
+\begin_layout Standard
+'id' => 'd13205a03e019e5926b910046b676c6c04f20363', 
+\end_layout
+
+\begin_layout Standard
+'name' => $sysconf['library_name'], 
+\end_layout
+
+\begin_layout Standard
+'subname' => $sysconf['library_subname'],
+\end_layout
+
+\begin_layout Standard
+'max_node_all' => 5, // maximum connection to server 
+\end_layout
+
+\begin_layout Standard
+'max_node_conn' => 1 // maximum connection for each node 
+\end_layout
+
+\begin_layout Standard
+);
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Konfigurasi node:
+\end_layout
+
+\begin_layout Standard
+$sysconf['node']['slims-node'] = array( 
+\end_layout
+
+\begin_layout Standard
+'id' => 'slims-node', // node id (must be UNIQUE, lowercase and not containing
+ any spaces!)
+\end_layout
+
+\begin_layout Standard
+'name' => 'SLiMS Library', // node name 
+\end_layout
+
+\begin_layout Standard
+'password' => '2325f677e21c1613909c953eb03c57352259cc5d', // this hash created
+ with SHA1 algoritm
+\end_layout
+
+\begin_layout Standard
+'baseurl' => 'http://localhost/senayan3-stable13', // node base URL 
+\end_layout
+
+\begin_layout Standard
+'ip' => '' // IP address of node
+\end_layout
+
+\begin_layout Standard
+); 
 \end_layout
 
 \begin_layout Subsection
@@ -236,7 +371,7 @@ Data bibliografi dapat dikirimkan ke UCS melalui node yang sudah terdaftar.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -278,6 +413,48 @@ Upload Bibliografi ke UCS
 Pilih data bibliografi yang ingin dimasukkan dalam UCS, lalu klik Upload
  Selected Bibliographic data to union Catalog Server.
  Maka data bibliografi yang telah dipilih akan masuk ada UCS.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Konfiguasi UCS di sysconfig.inc.php
+\end_layout
+
+\begin_layout Standard
+Pada sysconfig.inc.php ada beberapa script yang dapat mengkonfigurasi UCS,
+ script tersebut adalah:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$sysconf['ucs']['enable'] = true; 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$sysconf['ucs']['auto_delete'] = true; 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$sysconf['ucs']['auto_insert'] = true;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Script pertama, jika true akan menampilkan fasilitas Upload Bibliographic
+ data to Union Catalog Server yang muncul di modul Bibliography.
+ Auto Delete, jika diisi true akan mengakibatkan jika ada data yang sudah
+ diupload ke UCS, dan pada Node di hapus, maka data yang telah ada di UCS
+ akan ikut terhapus.
+ Auto Insert mengakibatkan data yang diisikan pada modul bibliography pada
+ Node akan otomatis masuk pada UCS dengan tanpa di Upload.
+ 
 \end_layout
 
 \end_body
