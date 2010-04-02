@@ -1,0 +1,905 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+
+\lang bahasa
+Instalasi
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Instalasi Senayan dari 
+\emph on
+source
+\end_layout
+
+\begin_layout Quote
+
+\emph on
+\color blue
+\lang bahasa
+Education is the passport to the future, for tomorrow belongs to those who
+ prepare for it today (Malcolm X)
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+(Contoh instalasi Senayan3-stable10)
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Pastikan Web Server (misalnya Apache web server), MySQL database server,
+ dan PHP scripting engine telah terinstall dan berjalan dengan baik.
+ Akan lebih mudah lagi kalau PhpMyAdmin juga diinstal karena akan sangat
+ membantu setup database via interface web.
+ Jika anda menggunakan Windows, direkomendasikan menggunakan portable Senayan
+ for Windows yang sudah terbukti stabil untuk Senayan dan mudah diinstal
+ dan di backup (cukup kopi folder).
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Instalasi Senayan dari source lebih direkomendasikan untuk platform selain
+ Windows seperti GNU/Linux dan Unix karena pada platform tersebut kondisinya
+ relatif lebih beragam.
+ Di Unix/Linux, instalasi Web server (misal Apache), MySQL dan PHP bisa
+ dilakukan melalui paket binary bawaan distro masing-masing.
+ Atau instalasi dari source code yang menawarkan fleksibilitas.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Senayan dikembangkan pada platform GNU/Linux (Zenwalk dan Ubuntu) dan sudah
+ dicoba dalam skala produksi di beberapa server yang berbasis Centos Linux,
+ OpenSUSE Linux, FreeBSD dan Windows.
+ Pada dasarnya tidak ada masalah dengan Operating System yang digunakan.
+ Yang penting PHP dan MySQL sudah berjalan dengan baik pada Operating System
+ tersebut.
+ Jika Senayan digunakan di internet (publik), disarankan untuk meningkatkan
+ keamanan dengan menambahkan firewall di sisi TCP/IP (layer 3 dan 4 dari
+ OSI layer), di sisi aplikasi (contoh modsecurity ) dan di sisi database
+ (contoh greensql: ).
+ Tutorial implementasinya bisa dibaca di: .
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-01.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Letakkan file senayan*.tar.gz ke web document root
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Sekarang letakkan source senayan pada web document root web server yang
+ anda gunakan.
+ Contoh: saya menggunakan Ubuntu Linux dan menginstall Apache Webserver
+ dari source code.
+ Web document root nya terletak di .
+ Jika menginstall Apache dari paket repository Ubuntu, biasanya terdapat
+ di .
+ Sedangkan di OpenSUSE terletak di .
+ Jika anda menggunakan xampplite, webdoc root biasanya terletak pada 
+\backslash
+xampplite
+\backslash
+htdocs.
+ Masih di Windows, jika anda meng-install Apache satu persatu (bukan melalui
+ paket AMP), webdocroot biasanya terdapat di .
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-02.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Ekstrak file senayan*.tar.gz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-03.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Senayan*.tar.gz telah selesai diekstrak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Ekstrak file senayan3-*.tar.gz di direktori yang sama.
+ Pada Windows anda bisa menggunakan Winzip.
+ Pada Linux anda bisa menggunakan tools bawaan Linux.
+ Misalnya (pada Ubuntu yang saya gunakan) dengan menjalankan perintah: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> sudo tar -xvxf senayan3-stable10-patch1.tar.gz 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+maka akan terbentuk folder/direktori senayan3-stable10.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-04.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Membuat database melalui console MySQL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Sekarang masuk ke folder senayan3-stable10 yang baru terbentuk.
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> cd senayan3-stable10
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Ada dua file sql yang akan kita masukkan untuk struktur dan data contoh
+ aplikasi senayan.
+ Untuk melihatnya, jalankan perintah: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> ls -la install/*.sql 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Sekarang dengan user yang punya akses untuk membuat database (contoh: root),
+ kemudian buat database dengan nama 'senayandb”: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> CREATE DATABASE senayandb; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> SHOW DATABASES; 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> quit;
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-new.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Membuat database dengan bantuan phpMyAdmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-new1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Membuat database dengan bantuan phpMyAdmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-06.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Dump data SQL ke database Senayan melalui MySQL console
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Berikutnya membuat struktur data senayan dan meng-instal data sampel.
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p senayandb < install/senayan.sql 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p senayandn < install/sample_data.sql
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-new2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Import data .sql dengan PhpmyAdmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-new3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Hasil Import di PhpMyadmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-08.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Membuat user database melalui MySQL console
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Opsional, dengan alasan keamanan, anda bisa membuat user khusus untuk database
+ senayan.
+ Caranya jalankan perintah berikut: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> mysql -u root -p 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+mysql> GRANT ALL PRIVILEGES ON senayandb.* TO 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+'senayanuser'@'localhost' IDENTIFIED BY 'password_senayanuser';
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-09.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Konfigurasi koneksi database pada file sysconfig.inc.php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-10.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Konfigurasi database yang telah disesuaikan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Sekarang edit file sysconfig.inc.php dengan editor favorit anda (misal: notepad,
+ vim), kemudian ubah Database connection config.
+ Jika nama database anda berbeda, ubah nilai dari 
+\emph on
+DB_NAME
+\emph default
+.
+ Begitu juga dengan 
+\emph on
+DB_USERNAME
+\emph default
+ dan 
+\emph on
+DB_PASSWORD
+\emph default
+.
+ Simpan perubahannya, kemudian tutup editor anda.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Di Unix/Linux, Pastikan Apache web server bisa melakukan aksi tulis ke direktori
+ images dan files.
+ Bisa dengan dua cara.
+ Pertama dengan mengubah hak akses direktori sehingga bisa ditulis (change
+ mode).
+ Sebagai root lakukan: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chmod -R 777 images 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chmod -R 777 files
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chmod -R 777 repository
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Cara kedua dengan mengubah kepemilikan user direktori tersebut (anda harus
+ tahu terlebih dahulu user yang menjalankan proses web server.
+ Misalnya user “daemon”, nobody, dan lain-lain).
+ Sebagai root lakukan: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chown -R daemon images 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chown -R daemon files
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+shell> chown -R daemon repository
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/instalasi-11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Aplikasi Senayan sudah bisa digunakan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Sekarang coba akses ke .
+ Senayan sudah bisa digunakan.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

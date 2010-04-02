@@ -1,0 +1,620 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+
+\lang bahasa
+Membership
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Your library is your portrait.
+ - Holbrook Jackson
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Modul Membership digunakan untuk mengelola data anggota.
+ Menu-menu ini terdapat beberapa menu, yaitu: 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu View Member List 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Digunakan untuk melihat anggota yang telah terdaftar dalam sistem.
+ Informasi yang ditampilkan adalah Member ID, Member Name, Membership Type,
+ Email, Last update.
+ Pada daftar ini dilengkapi pula dengan fasilitas DELETE dan EDIT.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-list.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+List data anggota 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Jika ada anggota yang keanggotaanya telah habis, maka kita dapat memperpanjang
+ dengan mengklik menu EDIT.
+ Perpanjangan masa keanggotaan dapat dilakukan secara otomatis atau manual.
+ Otomatis, dapat kita lakukan dengan checkbox EXTEND maka keanggotaan akan
+ diperpanjang selama waktu yang ditentukan, terhitung dari tanggal perpanjangan.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Sedangkan secara manual, dapat dilakukan dengan editing Expiry Date.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-extend.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Perpanjang Keanggotaan 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Selain itu perpanjangan juga dapat dilakukan secara massal.
+ Caranya adalah dengan klik View Expired Member, Checkbox member yang akan
+ di perpanjang, kemudian klik Extend Selected Member(s).
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/mem-exten-massal1.png
+	scale 150
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Perpanjang Keanggotaan Massal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/mem-exten-massal2.png
+	scale 150
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Perpanjang Keanggotaan Massal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Add New member
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Fasilitas untuk menambahkan data anggota baru ke dalam sistem Senayan.
+ Data anggota yang dimasukkan adalah: Member ID (ID Anggota -barcode/RFID-),
+ Member Name (Nama Lengkap Anggota), Register Date (tanggal mendatar), Expiry
+ Date (tanggal kadaluarsa), Institution (nama institusi, nama kantor atau
+ nama organisasi), Membership Type (Tipe Keanggotaan), Gender (Jenis Kelamin),
+ E-mail, Address (Alamat rumah atau kantor), Postal Code (Kode Pos), Phone
+ Number (Nomor Telepon), Fax Number (Nomor Fax), Personal ID Number (Nomor
+ ID Personal seperti no.
+ KTP), Notes (Catatan singkat), dan Upload Photo (File foto anggota).
+ Dalam Expiry date terdapat Auto Set, maksud dari fasilitas ini, jika auto
+ set di check maka tanggal expired anggota akan dihitung berdasar Membership
+ Type.
+ Namun jika di uncheck, maka Expiry date dapat ditentukan secara manual,
+ dengan memilih tanggal Expirednya.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Pada form ini pula, disediakan fitur Pending Membership.
+ Jika Pending Membership ini di check, maka anggota yang bersangkutan tidak
+ akan dapat melakukan sirkulasi, meskipun masih aktif.
+ Hal ini dapat diterapkan sebagai sanksi kepada anggota yang melanggar peraturan
+ perpustakaan.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-add.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Form Add New Member 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Member Type 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Merupakan definisi jenis keanggotaan.
+ Di dalam jenis keanggotaan ini di tetapkan Loan Limit (batas eksemplar
+ peminjaman), Loan Periode (lama pinjam), Reserve (pemesanan), Reserve Limit
+ (batas eksemplar pemesanan), Membership Periode (lama keanggotaan), Reborrow
+ Limit (batas perpanjangan), Fine Each Day (denda perhari), dan Overdue
+ Grace Periode (Toleransi keterlambatan -dalam hari-).
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-type.png
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Member Type 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Import Data 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Menu ini digunakan untuk mengambil data member dari luar aplikasi Senayan
+ untuk dimasukkan ke dalam aplikasi Senayan.
+ Format data yang di import adalah .csv.
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menu Export Data 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Menu ini digunakan untuk mengambil data member didalam aplikasi senayan,
+ dan hasilnya adakah data dalam bentuk .csv
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Contoh record data csv dari member ini adalah: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+"M001","Hendro Wicaksono","0","Mahasiswa","hendrowicaksono@yahoo.com",
+\begin_inset Newline newline
+\end_inset
+
+"Jakarta","99999","Perpustakaan DIKNAS","","member_M001.jpeg","KTP No.
+\begin_inset Newline newline
+\end_inset
+
+ 123","99999","99999","2008-12-25","2008-12-25","2009-12-25",
+\begin_inset Newline newline
+\end_inset
+
+"Anggota Teladan tahun 2006" 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-eksport.png
+	scale 130
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Gambar Member Eksport 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-import.png
+	scale 130
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Member Import 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Member Card
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Menu ini digunakan untuk mencetak kartu anggota.
+ Cara mencetaknya sama dengan cara mencetak label atau barcode.
+ Informasi yang ada dalam kartu anggota ini adalah: ID, Nama, Member Type,
+ Barcode, Foto (Jika ada) dan Identitas perpustakaan.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/mem-car.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Member Card 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
