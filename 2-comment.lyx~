@@ -48,7 +48,11 @@
 Mereka berkata:
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 
 \lang bahasa
 \begin_inset Box Shadowbox
@@ -86,7 +90,7 @@ Maklum saya bisa Senayan karena try and error, sekalian belajar php, makasih
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \emph on
 \lang bahasa
@@ -100,7 +104,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -128,7 +132,7 @@ Mendengar komitmen kalian berdua untuk selalu memperbaiki setiap kekurangan
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \lang bahasa
 \begin_inset Box Shadowbox
@@ -159,26 +163,6 @@ dengan Opensource kita yang awam IT jadi tambah mudeng....
  Ridwan Nur Efendi (UMS).
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-\begin_inset Box Shadowbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status collapsed
-
 \begin_layout Plain Layout
 
 \emph on
@@ -202,7 +186,7 @@ Selamat berkarya terus.
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \emph on
 \lang bahasa
@@ -216,7 +200,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -238,7 +222,7 @@ Sebagai warga kampung perpustakaan, saya ikut gembira..ketika karya Mas Hendro,
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \emph on
 \lang bahasa
@@ -277,7 +261,7 @@ Achmad (Pustakawan ITS Surabaya)
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \emph on
 \lang bahasa

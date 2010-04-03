@@ -129,7 +129,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/ucs-opac-det.png
-	scale 80
+	scale 60
 	rotateOrigin center
 
 \end_inset
@@ -457,6 +457,561 @@ Script pertama, jika true akan menampilkan fasilitas Upload Bibliographic
  Auto Insert mengakibatkan data yang diisikan pada modul bibliography pada
  Node akan otomatis masuk pada UCS dengan tanpa di Upload.
  
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Modul Administrasi UCS
+\end_layout
+
+\begin_layout Standard
+Modul adminitrasi UCS dapat diakses dengan menambahkan url /ucs/index.php?p=login.
+ Standar untuk masuk pada modul ini adalah username admin dan password admin.
+ Maka UCS akan menampilkan modul administrasinya sebagai berikut:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-admin.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Halaman Admin UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Halaman admin ini digunakan untuk mengelola data yang sudah ada dalam server
+ UCS.
+ Modul dalam UCS ini adalah Bibliography, Master File dan System.
+ 
+\end_layout
+
+\begin_layout Subsection
+Bibliography
+\end_layout
+
+\begin_layout Standard
+Bibliography ini digunakan untuk mengelola data bibliografi yang sudah diada
+ di server UCS.
+ Pengelolaan ini adalah meliputi perubahan dan penghapusan.
+ Selain itu pada bibliografi ini juga terdapat fitur export data bibliografi
+ UCS ke format .csv.
+ 
+\end_layout
+
+\begin_layout Subsection
+Master File
+\end_layout
+
+\begin_layout Standard
+Master File digunakan untuk mengelola (menambah, menghapus, mengedit) data
+ master file.
+ Data yang dapat diubah adalah: GMD, Publisher, Author, Subject, Place,
+ Doc.
+ Language dan Frequency.
+\end_layout
+
+\begin_layout Subsection
+Systems
+\end_layout
+
+\begin_layout Standard
+Pada Systems ini terdapat beberapa fitur, antara lain: System Configuration,
+ Content, Modules, System Users, User Group, Nodes Poll, System Log dan
+ Database Backup.
+\end_layout
+
+\begin_layout Subsubsection
+System Configuration
+\end_layout
+
+\begin_layout Standard
+Digunakan untuk mengkonfigurasi nama UCS, nama tambahan UCS, Template, bahasa,
+ jumlah koleksi yang ditampilkan, setingan tampilan XML dan session Timeout.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-systconf.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+System ConfigurationUCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+Content
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Fitur ini digunakan untuk menambah, mengedit atau menghapus Content yang
+ ada di UCS.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-content.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Content UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+Modules
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Digunakan untuk menseting modul baru yang ditambahkan pada UCS.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-modul.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Module di UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+System Users
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Untuk menambahkan user baru yang diijinkan untuk mengakses halaman administrasi
+ UCS.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-sysuser.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+System User UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+Users Group
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Digunakan untuk menambah, mengedit atau menghapus Group.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-usergrup.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+User group UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+Nodes Poll
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Memberlihatkan aktifitas Node, Ip Node waktu mulai request dan akhir request
+ serta status dari Node.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-nodespol.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Nodes Pool UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+System Log
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Menunjukkan rincian aktifitas node yang terhubung pada server UCS.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-syslog.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+System Log UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang bahasa
+Database Backup
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Digunakan untuk mebuat database cadangan UCS.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/ucs-backup.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Backup Database UCS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

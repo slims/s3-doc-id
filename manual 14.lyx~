@@ -239,7 +239,7 @@ filename "14-opac.lyx"
 \end_layout
 
 \begin_layout Standard
-\align center
+\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "15-absensi.lyx"
@@ -250,7 +250,6 @@ filename "15-absensi.lyx"
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset CommandInset include
 LatexCommand include
 filename "16-ucs.lyx"
