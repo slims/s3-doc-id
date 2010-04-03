@@ -245,7 +245,7 @@ Terimakasih atas semua komentar yang diberikan, semoga kita diikhlaskan
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -7030,7 +7030,7 @@ Sebagai contoh, apabila Anda ingin mengubah ukuran header label, sunting
  file dl_print.php, telusuri baris:
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $html_str .= '.labelHeaderStyle { background-color: #CCCCCC; font-weight:
  bold; padding: 5px; margin-bottom: 5px; }'."
 \backslash
@@ -10002,6 +10002,50 @@ Pencetakan barcode di Kartu anggota
  dan Tipe Anggota menjadi turun (merusak tampilan).
  Untuk mengatasi hal ini, sesuaikan panjang nama anggotanya dan panjang
  kartu anggota.
+\end_layout
+
+\begin_layout Section
+Modifikasi Tema OPAC
+\end_layout
+
+\begin_layout Standard
+Seringkali pengguna kurang puas dengan tema standar OPAC yang ada di dalam
+ SLiMS.
+ Untuk mendapatkan tampilan sesuai keinginan, pengguna harus melakukan modifikas
+i atas tema yang ada.
+ 
+\end_layout
+
+\begin_layout Standard
+Untuk melakukan modifikasi tema, pengguna harus merubah bagian-bagian yang
+ menyusun tema tersebut.
+ Tema standar untuk OPAC terletak di /template.
+ Ada beberapa cara untuk merubah tema.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mengganti file gambar di dalam folder media, tanpa merubah nama file.
+\end_layout
+
+\begin_layout Enumerate
+Mengganti file gambar dengan nama berbeda dari file asli.
+ Cara ini memerlukan modifikasi, selain pada folder media, juga mengganti
+ sebagian kecil isi pada style.css dan index_template.inc.php.
+\end_layout
+
+\begin_layout Enumerate
+Merubah bentuk tema secara keseluruhan, baik dengan membuat ulang tema sampai
+ melakukan porting tema dari tema-tema yang bisa diunduh dari internet.
+ Modifikasi ini memerlukan banyak pengetahuan tentang modifikasi tema serta
+ bahasa pemrograman dan css.
+\end_layout
+
+\begin_layout Standard
+Pada panduan ini, tema yang akan dimodifikasi adalah tema default SLiMS
+ dengan menggunakan cara pertama.
+ Segala sesuatu yang berhubungan dengan tema default, terdapat di dalam
+ /template/default.
 \end_layout
 
 \end_body

@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -70,7 +70,7 @@ Pengaturan Ukuran barcode, label dan kartu anggota
 Setting ukuran barcode dan label dapat dilakukan dengan melakukan editing
  file printed_settings.inc.php yang terletak di 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -421,7 +421,7 @@ Klik tabel biblio, kemudian lihat bagian Indexes pada bagian bawah.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -470,7 +470,7 @@ Kemudian pada “Create an Index on” isikan 1 dan klik Go, akan muncul tampila
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -518,7 +518,7 @@ Isilah kolom kosong diatas sehingga menjadi seperti berikut
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -627,7 +627,7 @@ http://localhost/phpmyadmin
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -673,7 +673,7 @@ Membuka phpmyadmin
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -713,7 +713,7 @@ Pilih database senayan
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -752,7 +752,7 @@ Pilih tab import
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -825,7 +825,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1094,7 +1094,7 @@ Petunjuk berikut ini hanya memberikan pengantar kilat untuk menambahkan
 
 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1109,7 +1109,7 @@ http://carsonified.com/blog/features/webapps/give-your-web-
 
 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1128,7 +1128,7 @@ dan di
 
 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1143,7 +1143,7 @@ http://carsonified.com/blog/dev/give-your-web-app-international-
 
 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1167,7 +1167,7 @@ Langkah pertama adalah mengunduh program PoEDIT
 \lang bahasa
 Unduh PoEdit dari 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1247,7 +1247,7 @@ status collapsed
 
  dan kode singkatan untuk negara di 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1258,7 +1258,7 @@ http://www.gnu.org/software/
 
 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3454,10 +3454,121 @@ Pencetakan barcode di Kartu anggota
  kartu anggota.
 \end_layout
 
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 
 \lang bahasa
-Selesai
+Merubah Template OPAC
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Untuk mendapatkan tampilan yang berbeda dari tampilan standar OPAC pengguna
+ dapat melakukan perubahan pada template yang telah disediakan di dalam
+ distribusi SLiMS.
+ Berikut adalah tampilan standar SLiMS
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/buitenzorg812/Pictures/shutterpicrepo/Senayan | Open Source Library Management System :: OPAC - Namoroka_038.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Template Standar SLiMS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Isi dari tampilan di atas dapat dilihat di dalam folder /template/default.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip 1em
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gambar-gambar yang berada pada template yang ditampilkan di atas, semuanya
+ terdapat di dalam folder /template/default/media.
+ Semua komponen gambar yang ada seperti logo, gambar latar tinggal diganti
+ menggunakan logo dan gambar latar yang Anda inginkan.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip 1em
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Harap diingat, bahwa penamaan file gambar latar atau logo yang baru harus
+ sama dengan nama file gambar latar atau logo sebelumnya.
+ Apabila Anda tidak melakukan perubahan nama untuk file logo, gambar latar
+ dan lainnya, yang harus Anda lakukan adalah menyunting file style.css yang
+ folder /template/default.
+ Rubah bagian-bagian yang mengindikasikan nama-nama file logo, gambar latar
+ dan lainnya.
 \end_layout
 
 \end_body
