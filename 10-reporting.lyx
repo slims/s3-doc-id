@@ -950,6 +950,7 @@ Merupakan laporan yang berisi statistik pengunjung perpustakaan --yang melakukan
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -960,7 +961,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/rep-visit stat.png
-	scale 80
+	scale 60
 	rotateOrigin centerTop
 
 \end_inset
@@ -977,6 +978,64 @@ status collapsed
 
 \lang bahasa
 Visitor Statistic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Visitor Statictic by day
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Merupakan laporan jumlah pengunjung berdasarkan hari.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-visbyday.png
+	scale 40
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Visitor by Day
 \end_layout
 
 \end_inset
@@ -1009,6 +1068,7 @@ Laporan ini berisi daftar nama anggota atau non anggota perpustakaan yang
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1019,7 +1079,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/rep-visit list.png
-	scale 80
+	scale 60
 	rotateOrigin centerTop
 
 \end_inset
@@ -1052,6 +1112,64 @@ Visitor List
 
 \lang bahasa
 Penjelasan mengenai fitur absen, silakan lihat pada bagian Absen.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Fines Report
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Merupakan laporan jumlah denda anggota perpustakaan berdasar hari.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/rep-finesrep.png
+	scale 40
+	rotateOrigin centerTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Fines Report
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
