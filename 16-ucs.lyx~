@@ -129,6 +129,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/ucs-opac-det.png
+	scale 80
 	rotateOrigin center
 
 \end_inset
@@ -203,28 +204,23 @@ Pada ucsysconfig.inc.php harus didefinisikan host, port, nama database, username
  File ucsysconfig.inc.php terletak pada /senayan3-st14/ucs/
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Standard
 define('DB_HOST', 'localhost'); 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Standard
 define('DB_PORT', '3306'); 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Standard
 define('DB_NAME', 'ucs'); 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Standard
 define('DB_USERNAME', 'root'); 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Standard
 define('DB_PASSWORD', 'admin');
 \end_layout
 
@@ -379,6 +375,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/ucs-uplodbiblio.png
+	scale 70
 	rotateOrigin center
 
 \end_inset
@@ -447,8 +444,13 @@ $sysconf['ucs']['auto_insert'] = true;
 \begin_layout Standard
 
 \lang bahasa
-Script pertama, jika true akan menampilkan fasilitas Upload Bibliogrphic
- data to Union Catalog Server.
+Script pertama, jika true akan menampilkan fasilitas Upload Bibliographic
+ data to Union Catalog Server yang muncul di modul Bibliography.
+ Auto Delete, jika diisi true akan mengakibatkan jika ada data yang sudah
+ diupload ke UCS, dan pada Node di hapus, maka data yang telah ada di UCS
+ akan ikut terhapus.
+ Auto Insert mengakibatkan data yang diisikan pada modul bibliography pada
+ Node akan otomatis masuk pada UCS dengan tanpa di Upload.
  
 \end_layout
 
