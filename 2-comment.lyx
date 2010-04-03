@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -383,15 +383,13 @@ http://creativecommons.org/about/licenses/
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang bahasa
 \begin_inset Graphics
-	filename image/cc_large-300x300.png
-	scale 80
+	filename /home/buitenzorg812/Desktop/88x31.png
+	scale 50
 
 \end_inset
 
