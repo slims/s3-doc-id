@@ -74,7 +74,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/absen-1.png
-	scale 80
+	scale 70
 	rotateOrigin center
 
 \end_inset
@@ -121,9 +121,22 @@ Jika sudah terdaftar, maka pengunjung cukup menuliskan Member ID pada kolom
 Untuk keamanan dan validitas proses absensi pengunjung, Visitor Counter
  ini dapat di seting hanya komputer dengan Internet Protokol tertentu saja
  yang dapat mengakses.
- Pengaturan ini terdapat dalam file visitor.inc.php yang ada dalam folder
- /senayan/lib/contents/visitor.inc.php.
- Scriptnya adalah sebagai berikit:
+ Pengaturan ini terdapat dalam file visitor.inc.php yang ada dalam
+\begin_inset Newline newline
+\end_inset
+
+ folder 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+/senayan/lib/contents/visitor.inc.php
+\end_layout
+
+\end_inset
+
+.
+ Scriptnya adalah sebagai berikut:
 \end_layout
 
 \begin_layout Standard
