@@ -1,0 +1,3464 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+
+\lang bahasa
+Tips dan Trik
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\color blue
+\lang bahasa
+Knowledge is free at the library.
+ Just bring your own container.
+ - Unknown
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Pengaturan Ukuran barcode, label dan kartu anggota
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Setting ukuran barcode dan label dapat dilakukan dengan melakukan editing
+ file printed_settings.inc.php yang terletak di 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/senayan3-stable7/admin/admin_template/
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Dalam file ini akan didapatkan baris-baris kode sebagai berikut: 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// label print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+/* measurement in cm */
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$page_width = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$page_height = 30;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$items_per_row = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$items_margin = 0.05;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$box_width = 8;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$box_height = 3.3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$include_header_text = 1; // change to 0 if dont want to use header in each
+ label
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$header_text = ''; // keep empty if you want to use Library Name as a header
+ text
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// item barcode print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+/* measurement in cm */
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_page_width = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_page_height = 30;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_items_per_row = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_items_margin = 0.1;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_box_width = 7;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_box_height = 5;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_include_header_text = 1; // change to 0 if dont want to use header
+ in each barcode
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_cut_title = 50; // maximum characters in title to appear in each
+ barcode.
+ change to 0 if you dont want the title cutted
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcode_header_text = ''; // keep empty if you want to use Library Name
+ as a header text
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// member card print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+/* measurement in cm */
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_page_width = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_page_height = 50;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_items_per_row = 2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_items_margin = 0.1;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_box_width = 11;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_box_height = 6;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_header_text = $sysconf['library_name'];
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_photo_width = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$card_photo_height = 3;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+// barcode generator print settings
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_page_width = 29.7;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_page_height = 21;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_page_margin = 0.2;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_items_margin = 0.05;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$barcodegen_include_border = 0;
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+?>
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Jika anda menginginkan setingan untuk barcode, label dan kartu anggota 
+ berbeda pada tiap template, maka anda dapat mengcopi file 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+print_settings.inc.php
+\end_layout
+
+\end_inset
+
+ ke dalam tiap template admin, dan mengubahnya sesuai selera anda.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Pencarian di OPAC dengan kata kunci minimal 3 huruf? 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Buka file my.ini yang terletak di 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/mysql/my.ini
+\end_layout
+
+\end_inset
+
+ Pada baris 43 tuliskan script berikut: 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+ft_min_word_len=3 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Kemudian simpan dan restart server mysql.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Bukalah database Senayan dengan phpmyadmin 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Klik tabel biblio, kemudian lihat bagian Indexes pada bagian bawah.
+ Anda akan menemukan keyname title_ft dengan field title.
+ Hapus baris tersebut dengan klik X.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Menghapus index title_ft
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Kemudian pada “Create an Index on” isikan 1 dan klik Go, akan muncul tampilan
+ sebagai berikut:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Penambahan Index MySql
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Isilah kolom kosong diatas sehingga menjadi seperti berikut
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Hasil Penambahan Index MySql
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Yang perlu anda ubah adalah: index name, index type dan Field Klik SAVE.
+ Restart Mysql anda, dan OPAC Senayan sudah dapat mencari dengan kata kunci
+ 3 karakter.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Tutorial Upgrade Aplikasi Perpustakaan Senayan
+\end_layout
+
+\begin_layout Standard
+Pada kali ini, tim Senayan Developer Community akan memberikan tips dan
+ trik bagaimana melakukan upgrade penggunaan Senayan dari versi lama hingga
+ versi terkahir.
+ perlu diketahui pada tanggal 13 Maret 2008, Senayan dirilis ke publik dan
+ diberi nama pengembangannya Senayan3-Stable1.
+ Hingga saat ini Senayan yang telah dirilis hingga Stable10.
+ Banyak sekali perbaikan perbaikan bugs serta penambahan fitur dan modul
+ di saat pertama kali rilis hingga saat ini.
+ lalu muncul pertanyaan bagaimana jika kita telah menggunakan Senayan versi
+ lama, dan ingin meng-upgrade ke versi terbaru? berikut ini kami berikan
+ tips dan trik untuk melakukan upgrade Senayan versi lama ke versi yang
+ terbaru.
+\end_layout
+
+\begin_layout Standard
+Pertama, perlu diketahui upgrade Senayan harus dilakukan secara bertahap
+ dan berurut.
+ Contohnya jika kita telah menggunakan Senayan3-Stable1, maka untuk melakukan
+ upgrade ke Senayan3 Stable9 harus dilakukan secara berurut sesuai dengan
+ versi setingkat di atasnya.
+ artinya lakukan upgrade dari Stable1 ke Stable2 terlebih dahulu, kemudian
+ lanjut ke Stable3 dan seterusnya hingga ke Stable9.
+\end_layout
+
+\begin_layout Standard
+Kedua, berikut ini cara-cara melakukan upgrade secara teknis.
+\end_layout
+
+\begin_layout Standard
+- Upgrade menggunakan phpmyadmin
+\end_layout
+
+\begin_layout Standard
+1.
+ buka browser, ketikkan alamat 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://localhost/phpmyadmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-php1.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Membuka phpmyadmin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ masukan user name dan password anda.
+\end_layout
+
+\begin_layout Standard
+3.
+ pilih database senayan dengan cara mengklik nama databasenya.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-data-sen.png
+	scale 110
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pilih database senayan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ klik tab Import.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-import.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pilih tab import
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ klik browse.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-import2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Klik Browse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+6.
+ cari file 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+upgrade_stable3.sql
+\end_layout
+
+\end_inset
+
+ (jika anda menggunakan Senayan3-Stable2) dan cari file 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+upgrade_stable4.sql
+\end_layout
+
+\end_inset
+
+ (jika anda menggunakan Senayan3-Stable4), (harus bertingkat).
+ file tersebut berada di path 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+../upgrade/old_sql/..
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-pilih-upg.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pilih data untuk upgrade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+7.
+ lalu klik Go.
+\end_layout
+
+\begin_layout Standard
+8.
+ ulangi langkah no 6 dan 7 sampai ke upgrade_stable10_patch1.sql.
+\end_layout
+
+\begin_layout Standard
+9.
+ lalu lakukan editing ulang pada file 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+sysconfig.inc.php
+\end_layout
+
+\end_inset
+
+ yang ada di Senayan3-Stable9.
+ sesuaikan konfigurasinya dengan 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+sysconfig.inc.php
+\end_layout
+
+\end_inset
+
+ yang ada pada Senayan versi lama yang anda gunakan.
+ Sesuaikan pula letak file 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+mysqldump
+\end_layout
+
+\end_inset
+
+ anda (letakknya juga di file 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+sysconfig.inc.php
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-sys-edit.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Edit sysconfig.inc.php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ Copy dan paste images dan files yang ada pada Senayan versi lama (yang
+ anda gunakan saat ini) ke Senayan versi terbaru.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-fil-img.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Copi folder FILE dan IMAGES
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ buka browser baru, dan masukkan alamat untuk untuk mengakses Senayan versi
+ terbaru anda.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/upg-tampil.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tampilan Senayan Versi terbaru
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ selamat mencoba.
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Mengubah dan menambahkan informasi pada Library Information di OPAC 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Tips ini, mulai Senayan3-stable9 dipindah pada menu System --> Content 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Mengubah dan menambahkan informasi pada Help on Search
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Tips ini, mulai Senayan3-stable9 dipindah pada menu System --> Content 
+\end_layout
+
+\begin_layout Section
+\noindent
+
+\lang bahasa
+Mengubah/Membuat bahasa Pengantar baru
+\end_layout
+
+\begin_layout Itemize
+\noindent
+
+\lang bahasa
+Sejak Senayan3-stable11, penambahan bahasa pengantar mulai menggunakan fungsi
+ gettext dalam PHP untuk mengganti nilai constant dalam file bahasa sebelumnya
+ (misalnya indonesia.lang.inc.php atau english.lang.inc.php).
+ Kini Default Application Language, Senayan telah menyediakan tiga (3) bahasa
+ yaitu bahasa Indonesia, bahasa Inggris dan bahasa Jerman.
+ untuk bahasa Inggris.
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Petunjuk berikut ini hanya memberikan pengantar kilat untuk menambahkan
+ terjemahan bahasa di Senayan.
+ Untuk lebih lengkapnya penjelasan tentang membuat aplikasi banyak bahasa
+ bisa ditemukan di
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://carsonified.com/blog/features/webapps/give-your-web-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+app-international-appeal/
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+dan di
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://carsonified.com/blog/dev/give-your-web-app-international-
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+appeal-part-ii/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Langkah pertama adalah mengunduh program PoEDIT 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Unduh PoEdit dari 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.poedit.net/
+\end_layout
+
+\end_inset
+
+ dan menginstalnya.
+ Aplikasi ini tersedia dalam versi Window / Linux / Mac.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Membuat Folder / Direktori baru 
+\begin_inset Quotes eld
+\end_inset
+
+Bahasa
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Buka direktori senayan3 
+\backslash
+ lib 
+\backslash
+ lang 
+\backslash
+ locale
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Buat folder menggambarkan 
+\begin_inset Quotes eld
+\end_inset
+
+bahasa
+\begin_inset Quotes erd
+\end_inset
+
+ dan negara terjemahan tersebut.
+ Misalnya singkatan en_US: untuk Inggris / Amerika Serikat.
+ Meskipun tidak sangat diperlukan untuk menggunakan konvensi ini, akan lebih
+ baik jika bisa mengikuti secara konsisten.
+ Daftar kode-kode bahasa dapat dilihat di 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gnu.org/software/gettext
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/manual/gettext.html#Usual-Language-Codes
+\end_layout
+
+\end_inset
+
+ dan kode singkatan untuk negara di 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gnu.org/software/
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+gettext/manual/gettext.html#Country-Codes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Masuk ke dalam folder baru tadi dan membuat folder lain yang disebut: LC_MESSAGE
+S
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Misalkan yang dibuat adalah id_ID, maka sekarang di direktori tadi terdapat
+ sesuatu seperti id_ID / LC_MESSAGES
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Membuat KATALOG untuk menciptakan terjemahan
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Mulai PoEdit
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Klik Menu "File"> "New Catalog"
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Tab "Project info":
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Project Name and Version": (Opsional) Masukkan Senayan3
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Team": (Opsional) Masukkan nama Anda
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Team's email address": (Opsional) Masukkan email Anda
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Language": Pilih bahasa yang anda ingin menerjemahkan ke
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Country": Pilih negara untuk bahasa
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Charset": Gunakan utf-8
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Source code charset": Gunakan utf-8
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Plural forms": Ini sedikit lebih rumit.
+ Jika bahasa Anda hanya memiliki satu bentuk jamak bentuk menggunakan: nplurals
+ = 2; plural = n! = 1; Untuk bahasa lain Anda dapat menemukan daftar kemungkinan
+ bentuk jamak di 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://translate.sourceforge.net
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+/wiki/l10n/pluralforms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Base Path": Masukkan: ../../../../../
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+"Paths" (Klik tombol "New Item"): Masukkan: .
+ (hanya titik) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Tab "Kata kunci"
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Tambahkan dua baris: 
+\begin_inset Newline newline
+\end_inset
+
+__ (Dua garis bawah)
+\begin_inset Newline newline
+\end_inset
+
+_ngettext
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Tekan ok dan menyimpan file di bawah senayan3 
+\backslash
+ lib 
+\backslash
+ lang 
+\backslash
+ locale 
+\backslash
+ (YOUR LANGUAGE) 
+\backslash
+ LC_MESSAGES dengan nama 
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+messages.po
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Memulai transalasi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Pertama-tama Anda harus mengambil semua string yang akan diterjemahkan.
+ Pergi ke "Catalog"> "Update from sources" (atau cukup klik tombol ketiga
+ dari kiri di jendela utama)
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Sekarang mulai menerjemahkan setiap baris dengan mengkliknya dan memasuki
+ terjemahan di bagian bawah jendela
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Setelah selesai pergi ke "File"> "Save" (atau tekan tombol kedua dari kiri)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Menyajikan hasil terjemahan 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Buka file 
+\backslash
+ senayan3 
+\backslash
+ lib 
+\backslash
+ lang 
+\backslash
+ localisation.php dan pada baris seperti ini di akhir harus diubah/ditambahkan:
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout LyX-Code
+
+$available_languages [] = array ( 'xx_XX', _ ( 'NAMA BAHASA INGGRIS'), 'NAMA
+ NATIVE Bahasa'); 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang bahasa
+CATATAN
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Ketika mengklik kanan pada sebuah baris, Anda dapat melihat di mana konteks
+ (kode sumber) string digunakan.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Jika pada suatu saat ingin dilakukan mengubah terjemahan yang sama berulang
+ kali, anda harus melakukannya satu persatu karena PoEdit tidak mendukung
+ operasi pencarian & menggantikan teks sekaligus.
+ Cara lainnya bisa dilakukan dengan membuka messages.po file dalam editor
+ teks yang umum dan melakukan pencarian & ganti di file tersebut.
+ Daftar berikut akan membantu untuk mengatasi situasi ini.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+\lang bahasa
+Daftar kata-kata / frasa umum di Senayan:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Ini hanyalah sebuah daftar kecil dengan kata-kata / frase terjemahan yang
+ ditemukan dalam menterjemahkan.
+ Daftar ini dapat membantu untuk menemukan terjemahan istilah yang paling
+ "menyusahkan" dan menjaga konsistensi penggunaan sinonim dalam menterjemahkan.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Tabular
+<lyxtabular version="3" rows="43" columns="2">
+<features islongtable="true">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+add => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+loan => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Are You Sure Want to => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Loan Limit => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Authority Files => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Location => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Authority Type => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+login => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+bibliographic => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Lookup Files => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+cant be empty / can not be empty => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+make sure => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Call Number => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+member ID => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+cancel => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Member Type => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+circulation => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Member Type Name => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+check => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Membership => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+checkout (items) => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+module => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Code => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+must be set = cant be empty => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Collection Type => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+overdue => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+confirm => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+(overdue) fines => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+content => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Override(Overide) => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+copies = items => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+pending => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Credit => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+PERMITTED => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+data => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Place => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+database backup => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+previous => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Debit => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+privileges => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+due date => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+promote(ed) => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+expired => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+quick return => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Expiry Date => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Real Name => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Export XXX Data To CSV format =>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Reborrow => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+fines => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+repository => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Forbidden => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Required => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+frequency => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+reservation => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+gmd => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+return => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+group => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+section => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+history => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+stock take => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+holiday => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Subject => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+id => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Subject Type => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+image thumbnail => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Subscription => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Import Data to XXX from CSV file => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+supplier => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+initialize => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+System Users => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Inventory Code => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+template => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+item = copies => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+transaction => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+Item Code => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+uncheck => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+label => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+update => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Labels => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+user/user name => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+library automatation (system) =>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+view => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+library members => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+you => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+list => 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang bahasa
+You are going to edit xxx => 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Setting Barcode
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Untuk mendapatkan hasil pencetakan barcode yang bagus, minimal karakter
+ barcode adalah 6, yang bisa terdiri dari angka atau huruf.
+ Hindari *&()%$#@!, kecuali (-).
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Beberapa contoh pencetakan barcode:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bc-8-1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Pencetakan barcode koleksi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bc-8-2.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Pencetakan barcode di menu Systems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/bc-8-3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Pencetakan barcode di Kartu anggota
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+*) pada kartu anggota, panjang nama anggota akan mengakibatkan ID, Nama
+ dan Tipe Anggota menjadi turun (merusak tampilan).
+ Untuk mengatasi hal ini, sesuaikan panjang nama anggotanya dan panjang
+ kartu anggota.
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Selesai
+\end_layout
+
+\end_body
+\end_document
