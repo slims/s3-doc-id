@@ -1,4 +1,4 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -16,6 +16,7 @@
 \font_tt_scale 100
 
 \graphics default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -3491,7 +3492,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/buitenzorg812/Pictures/shutterpicrepo/Senayan | Open Source Library Management System :: OPAC - Namoroka_038.png
+	filename image/template_default.png
 	scale 30
 
 \end_inset
@@ -3569,6 +3570,221 @@ Harap diingat, bahwa penamaan file gambar latar atau logo yang baru harus
  folder /template/default.
  Rubah bagian-bagian yang mengindikasikan nama-nama file logo, gambar latar
  dan lainnya.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mengaktifkan SLiMS sebagai service di Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+Apache web server dan basisdata MySQL pada portable senayan yang digunakan
+ oleh sistem operasi Microsoft Windows dapat dijalankan secara otomatis,
+ tanpa harus mengaktifkan file apache_start.bat dan mysql_start.bat secara
+ manual, dengan cara membuat kedua file tersebut menjadi service.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip 1em
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kita mulai dengan membuka command prompt pada Windows.
+ Untuk menjadikan Apache web server sebagai service, pastikan kita sudah
+ berada dalam direktori psenayan.
+ Masukkan perintah:
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+psenayan
+\backslash
+apache
+\backslash
+bin
+\backslash
+httpd.exe -k install -n Apache2.2
+\end_layout
+
+\begin_layout Standard
+Sebagai contoh, apabila psenayan kita letakkan pada drive D:, maka perintahnya
+ adalah:
+\end_layout
+
+\begin_layout LyX-Code
+D:
+\backslash
+psenayan
+\backslash
+apache
+\backslash
+bin> httpd.exe -k install -n Apache2.2 
+\end_layout
+
+\begin_layout Standard
+Perintah di atas menjadikan Apache web server termula secara otomatis ketika
+ Windows dinyalakan.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip 1em
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Setelah Apache web server, langkah berikutnya adalah mengatur database MySQL
+ pada portable senayan sebagai service.
+ Sama seperti proses sebelumnya, pastikan kita sudah berada dalam direktori
+ psenayan.
+ Masukkan perintah:
+\end_layout
+
+\begin_layout LyX-Code
+<nama direktori>:
+\backslash
+psenayan
+\backslash
+mysql
+\backslash
+bin
+\backslash
+mysqld.exe –install
+\end_layout
+
+\begin_layout Standard
+Sebagai contoh, apabila psenayan kita letakkan pada drive D:, maka perintahnya
+ adalah:
+\end_layout
+
+\begin_layout LyX-Code
+D:
+\backslash
+psenayan
+\backslash
+mysql
+\backslash
+bin> mysqld.exe --install
+\end_layout
+
+\begin_layout Standard
+Perintah di atas telah mengaktifkan MySQL sebagai service.
+ Langkah selanjutnya adalah dengan mengubah beberapa bagian pada file my.ini
+ yang terletak dalam direktori psenayan
+\backslash
+mysql.
+ Kita harus merubah 
+\emph on
+basedir
+\emph default
+ serta 
+\emph on
+datadir
+\emph default
+ yang ada.
+ Bagian tersebut adalah:
+\end_layout
+
+\begin_layout LyX-Code
+# set basedir to your installation path 
+\end_layout
+
+\begin_layout LyX-Code
+basedir=/psenayan/mysql 
+\end_layout
+
+\begin_layout LyX-Code
+# set datadir to the location of your data directory 
+\end_layout
+
+\begin_layout LyX-Code
+datadir=/psenayan/mysql/data
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Yang harus dirubah adalah penambahan direktori tempat psenayan disimpan
+ pada basedir dan datadir.
+ Karena pada contoh kita menempatkan direktori psenayan pada drive D:, maka
+ bentuk perubahannya:
+\end_layout
+
+\begin_layout LyX-Code
+# set basedir to your installation path 
+\end_layout
+
+\begin_layout LyX-Code
+basedir=D:/psenayan/mysql 
+\end_layout
+
+\begin_layout LyX-Code
+# set datadir to the location of your data directory 
+\end_layout
+
+\begin_layout LyX-Code
+datadir=D:/psenayan/mysql/data
+\end_layout
+
+\begin_layout Standard
+Simpan dan mula ulang komputer Anda.
+ Apabila dalam proses tidak ada kesalahan, maka psenayan langsung bisa digunakan
+ tanpa harus mengaktifkan file apache_start.bat dan mysql_start.bat lagi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip 1em
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Selamat mencoba.
+ Coba, unduh, laporkan! ;).
 \end_layout
 
 \end_body

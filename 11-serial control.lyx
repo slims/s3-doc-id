@@ -16,6 +16,7 @@
 \font_tt_scale 100
 
 \graphics default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false

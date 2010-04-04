@@ -404,6 +404,7 @@ mysql> quit;
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -446,6 +447,7 @@ Membuat database dengan bantuan phpMyAdmin
 
 \lang bahasa
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -488,6 +490,7 @@ Membuat database dengan bantuan phpMyAdmin
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -550,6 +553,7 @@ shell> mysql -u root -p senayandn < install/sample_data.sql
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -592,6 +596,7 @@ Import data .sql dengan PhpmyAdmin
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -634,6 +639,7 @@ Hasil Import di PhpMyadmin
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -703,6 +709,7 @@ mysql> GRANT ALL PRIVILEGES ON senayandb.* TO
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -746,6 +753,7 @@ Konfigurasi koneksi database pada file sysconfig.inc.php
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -867,6 +875,7 @@ shell> chown -R daemon repository
 
 \lang bahasa
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open

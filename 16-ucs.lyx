@@ -16,6 +16,7 @@
 \font_tt_scale 100
 
 \graphics default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -204,23 +205,23 @@ Pada ucsysconfig.inc.php harus didefinisikan host, port, nama database, username
  File ucsysconfig.inc.php terletak pada /senayan3-st14/ucs/
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 define('DB_HOST', 'localhost'); 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 define('DB_PORT', '3306'); 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 define('DB_NAME', 'ucs'); 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 define('DB_USERNAME', 'root'); 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 define('DB_PASSWORD', 'admin');
 \end_layout
 
@@ -234,20 +235,20 @@ Letak dari file ini ada di dalam folder utama Senayan.
  konfigurasi sebagai berikut:
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $ucs['serveraddr'] = 'http://127.0.0.1/senayan3-stable14/ucs'; 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $node['id'] = 'slims-node'; 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $node['password'] = '2325f677e21c1613909c953eb03c57352259cc5d'; // default
  is s0beautifulday 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $node['name'] = 'SLiMS Library'; // node name
 \end_layout
 
@@ -291,31 +292,31 @@ File ini terletak pada /senayan3-st14/ucs/ucserver.inc.php.
 Berikut adalah konfigurasi server:
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $sysconf['server'] = array( 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'id' => 'd13205a03e019e5926b910046b676c6c04f20363', 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'name' => $sysconf['library_name'], 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'subname' => $sysconf['library_subname'],
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'max_node_all' => 5, // maximum connection to server 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'max_node_conn' => 1 // maximum connection for each node 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 );
 \end_layout
 
@@ -325,33 +326,33 @@ $sysconf['server'] = array(
 Konfigurasi node:
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 $sysconf['node']['slims-node'] = array( 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'id' => 'slims-node', // node id (must be UNIQUE, lowercase and not containing
  any spaces!)
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'name' => 'SLiMS Library', // node name 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'password' => '2325f677e21c1613909c953eb03c57352259cc5d', // this hash created
  with SHA1 algoritm
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'baseurl' => 'http://localhost/senayan3-stable13', // node base URL 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 'ip' => '' // IP address of node
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 ); 
 \end_layout
 
@@ -428,19 +429,19 @@ Pada sysconfig.inc.php ada beberapa script yang dapat mengkonfigurasi UCS,
  script tersebut adalah:
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 
 \lang bahasa
 $sysconf['ucs']['enable'] = true; 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 
 \lang bahasa
 $sysconf['ucs']['auto_delete'] = true; 
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 
 \lang bahasa
 $sysconf['ucs']['auto_insert'] = true;
@@ -977,7 +978,7 @@ Digunakan untuk mebuat database cadangan UCS.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center

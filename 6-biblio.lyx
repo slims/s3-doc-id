@@ -16,6 +16,7 @@
 \font_tt_scale 100
 
 \graphics default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -1797,12 +1798,24 @@ Item Eksport
 Format hasil eksport data item pada Senayan adalah sebagai berikut:
 \end_layout
 
-\begin_layout Standard
+\begin_layout LyX-Code
 
 \lang bahasa
-"B00001","","Reference","INV/B00001","0000-00-00","","","My Library","0000-00-00
-","","","1","","500000","Rupiah","0000-00-00","2008-12-26 22:11:10","2008-12-26
- 22:14:13","Ajax : creating Web pages with asynchronous JavaScript and XML"
+"B00001","","Reference","INV/B00001","0000-00-00","","","MyLibrary",
+\begin_inset Newline newline
+\end_inset
+
+"0000-00-00","","","1","","500000","Rupiah","0000-00-00",
+\end_layout
+
+\begin_layout LyX-Code
+
+\lang bahasa
+"2008-12-26 22:11:10","2008-12-26 22:14:13",
+\begin_inset Newline newline
+\end_inset
+
+"Ajax : creating Web pages with asynchronous JavaScript and XML"
 \end_layout
 
 \begin_layout Standard
@@ -1819,7 +1832,12 @@ Item Import
 \end_layout
 
 \begin_layout Standard
-
+Item import digunakan untuk memasukkan data item ke database Senayan.
+ Jika kegiatan ini dilakukan dari database Senayan yang satu ke Senayan
+ yang lain, maka item import dilakukan setelah bibliography import.
+ Artinya item akan menyesuaikan data bibliografi yang telah diimport lebih
+ dahulu.
+ 
 \end_layout
 
 \end_body

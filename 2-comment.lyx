@@ -383,15 +383,13 @@ http://creativecommons.org/about/licenses/
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang bahasa
 \begin_inset Graphics
-	filename image/cc_large-300x300.png
-	scale 80
+	filename image/cc-by-nc-sa_340x340.png
+	scale 30
 
 \end_inset
 
