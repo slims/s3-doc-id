@@ -16,7 +16,6 @@
 \font_tt_scale 100
 
 \graphics default
-\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -37,7 +36,6 @@
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
 \author "" 
 \end_header
 

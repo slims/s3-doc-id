@@ -64,7 +64,6 @@ ll software lain (web server, mysql, php) terlebih dahulu.
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -142,7 +141,6 @@ http://senayan.diknas.go.id
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -196,7 +194,6 @@ Ekstrak file psenayan*.zip langsung ke root directory.
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -247,7 +244,6 @@ Otomatis akan terbentuk folder “psenayan”.
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -299,7 +295,6 @@ Sekarang Jalankan file “apache_start.bat” dan “mysql_start.bat”.
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -353,7 +348,6 @@ Pada Windows yang Firewall-nya aktif, biasanya akan muncul pop-up “Windows
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -405,7 +399,6 @@ Jika proses Apache berhasil diaktifkan, akan muncul window dengan pesan
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -461,7 +454,6 @@ Berikutnya aktifkan mysql database server dengan melakukan double-click
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -513,7 +505,6 @@ Jika proses MySQL berhasil diaktifkan, akan muncul window dengan pesan “ready
 
 \lang bahasa
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed

@@ -155,7 +155,7 @@ Pada script diatas, 127.0.0.1 merupakan IP address yang diijinkan untuk mengakse
 \end_layout
 
 \begin_layout Standard
-$allowed_counter_ip = array('10.45.1.1', '10.45.1.2','10.45.1.3');
+$allowed_counter_ip = array('10.45.1.1, 10.45.1.2,10.45.1.3');
 \end_layout
 
 \begin_layout Standard

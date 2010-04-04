@@ -429,19 +429,19 @@ Pada sysconfig.inc.php ada beberapa script yang dapat mengkonfigurasi UCS,
  script tersebut adalah:
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Standard
 
 \lang bahasa
 $sysconf['ucs']['enable'] = true; 
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Standard
 
 \lang bahasa
 $sysconf['ucs']['auto_delete'] = true; 
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Standard
 
 \lang bahasa
 $sysconf['ucs']['auto_insert'] = true;
