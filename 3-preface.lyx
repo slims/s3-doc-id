@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -80,7 +80,7 @@ SENAYAN adalah Open Source Software (OSS) berbasis web untuk memenuhi kebutuhan
 
 \lang bahasa
 Keunggulan SENAYAN lainnya adalah multi-platform, yang artinya bisa berjalan
- secara natif hampir di semua Sistem Operasi yang bisa menjalankan bahasa
+ secara native hampir di semua Sistem Operasi yang bisa menjalankan bahasa
  pemrograman PHP (
 \begin_inset Flex URL
 status collapsed
@@ -98,7 +98,7 @@ http://www.php.net
 
  (
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -119,7 +119,7 @@ Senayan merupakan aplikasi berbasis web dengan pertimbangan cross-platform.
  Sepenuhnya dikembangkan menggunakan Software Open Source yaitu: PHP Web
  Scripting Language, (
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -143,7 +143,7 @@ www.php.net
  study, copy, modify, and redistribute computer programs).
  Lebih detail tentang GPLv3 bisa dibaca di 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -169,7 +169,7 @@ Senayan versi 1 dan 2 tidak dirilis ke publik karena masih tahap ujicoba
  Untuk melihat demo dan mendownload software Senayan, bisa berkunjung ke
  
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -288,7 +288,8 @@ Dukungan pengelolaan dokumen multimedia (.flv,.mp3) dan dokumen digital.
 \begin_layout Itemize
 
 \lang bahasa
-Senayan mendukung beragam format bahasa termasuk selain latin.
+Senayan mendukung beragam format bahasa termasuk bahasa yang tidak menggunakan
+ penulisan selain latin.
  
 \end_layout
 

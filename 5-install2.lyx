@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -54,8 +54,8 @@ Instalasi Portable Senayan di Windows
 Portable Senayan for Windows adalah paket software yang terdiri dari aplikasi
  Senayan, Apache Web Server, PHP Scripting engine, MySQL database Server
  dan PHPMyAdmin.
- Ditujukan agar orang mudah melakukan instalasi Senayan tanpa dipusing menginsta
-ll software lain (web server, mysql, php) terlebih dahulu.
+ Ditujukan agar orang mudah melakukan instalasi Senayan tanpa dipusingkan
+ menginstall software lain (web server, mysql, php) terlebih dahulu.
  Tinggal copy, ekstrak dan jalankan!
 \end_layout
 
@@ -66,7 +66,7 @@ ll software lain (web server, mysql, php) terlebih dahulu.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -107,7 +107,7 @@ Kopi file psenayan*.zip ke root directory/folder
 \lang bahasa
 Kopi file 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -118,7 +118,7 @@ psenayan-x.x.zip
 
  (misalnya psenayan-3.0.zip, silakan dapatkan rilis terbaru Psenayan di 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -133,7 +133,7 @@ http://senayan.diknas.go.id
  atau d:
 \backslash
 .
- Jangan letakkan didalam direktori.
+ Jangan letakkan didalam direktori/folder lain.
 \end_layout
 
 \begin_layout Standard
@@ -143,7 +143,7 @@ http://senayan.diknas.go.id
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -495,9 +495,9 @@ MySQL telah berjalan dengan baik
 \begin_layout Standard
 
 \lang bahasa
-Jika proses MySQL berhasil diaktifkan, akan muncul window dengan pesan “ready
- for connections”.
- Biarkan window tersebut.
+Jika proses MySQL berhasil diaktifkan, akan muncul jendela dengan pesan
+ “ready for connections”.
+ Biarkan jendela tersebut.
 \end_layout
 
 \begin_layout Standard

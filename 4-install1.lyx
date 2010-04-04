@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -107,7 +107,18 @@ Senayan dikembangkan pada platform GNU/Linux (Zenwalk dan Ubuntu) dan sudah
  keamanan dengan menambahkan firewall di sisi TCP/IP (layer 3 dan 4 dari
  OSI layer), di sisi aplikasi (contoh modsecurity ) dan di sisi database
  (contoh greensql: ).
- Tutorial implementasinya bisa dibaca di: .
+ Tutorial implementasinya bisa dibaca di: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://hendrowicaksono.multiply.com/journal/item/54
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -118,7 +129,7 @@ Senayan dikembangkan pada platform GNU/Linux (Zenwalk dan Ubuntu) dan sudah
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -160,19 +171,22 @@ Letakkan file senayan*.tar.gz ke web document root
 Sekarang letakkan source senayan pada web document root web server yang
  anda gunakan.
  Contoh: saya menggunakan Ubuntu Linux dan menginstall Apache Webserver
- dari source code.
- Web document root nya terletak di .
- Jika menginstall Apache dari paket repository Ubuntu, biasanya terdapat
- di .
- Sedangkan di OpenSUSE terletak di .
- Jika anda menggunakan xampplite, webdoc root biasanya terletak pada 
+ dari source code, web document root nya terletak di /usr/local/apache/htdocs.
+ Sedangkan di OpenSUSE terletak di /srv/www.
+ Jika anda menggunakan xampplite, web document root biasanya terletak pada
+ 
 \backslash
 xampplite
 \backslash
 htdocs.
  Masih di Windows, jika anda meng-install Apache satu persatu (bukan melalui
- paket AMP), webdocroot biasanya terdapat di .
- 
+ paket AMP), web document root biasanya terdapat di Program Files
+\backslash
+apachegroup
+\backslash
+apache
+\backslash
+htdocs
 \end_layout
 
 \begin_layout Standard
@@ -183,7 +197,7 @@ htdocs.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -227,7 +241,7 @@ Ekstrak file senayan*.tar.gz
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -292,7 +306,7 @@ maka akan terbentuk folder/direktori senayan3-stable10.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -392,7 +406,7 @@ mysql> quit;
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -855,7 +869,7 @@ shell> chown -R daemon repository
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -893,8 +907,24 @@ Aplikasi Senayan sudah bisa digunakan
 \begin_layout Standard
 
 \lang bahasa
-Sekarang coba akses ke .
- Senayan sudah bisa digunakan.
+Sekarang coba akses ke 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://localhost/senayan3-stable10/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Senayan sudah bisa digunakan.
 \end_layout
 
 \begin_layout Standard
