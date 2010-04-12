@@ -280,7 +280,6 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/rep-pie1.png
-	scale 80
 
 \end_inset
 
@@ -323,7 +322,6 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/rep-pie2.png
-	scale 50
 
 \end_inset
 

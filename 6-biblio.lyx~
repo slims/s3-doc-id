@@ -96,7 +96,7 @@ hy.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -104,7 +104,6 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/biblio.png
-	scale 80
 
 \end_inset
 
@@ -905,7 +904,7 @@ Menu ini memberikan informasi tentang item yang sedang dipinjam.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -913,6 +912,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/biblio-chekout.png
+	scale 80
 
 \end_inset
 
@@ -972,7 +972,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/biblio-p2p.png
-	scale 50
+	scale 80
 
 \end_inset
 
