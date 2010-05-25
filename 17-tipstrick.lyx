@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -3766,25 +3766,54 @@ Simpan dan mula ulang komputer Anda.
  tanpa harus mengaktifkan file apache_start.bat dan mysql_start.bat lagi.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-vskip 1em
+\begin_layout Section
+Menonaktifkan Service yang telah dipasang
 \end_layout
 
+\begin_layout Standard
+Meletakkan apache dan mysql sebagai service aktif di dalam komputer bisa
+ jadi memudahkan kita untuk memulai psenayan.
+ Namun kadangkala terjadi satu dan lain hal yang memaksa kita untuk menonaktifka
+n service aktif tersebut.
+ Cara dilakukan untuk menonaktifkan service tersebut adalah:
+\end_layout
+
+\begin_layout Itemize
+Buka program command prompt yang ada pada sistem operasi windows.
+ atau cukup klik run lalu masukkan perintah 
+\begin_inset Quotes eld
 \end_inset
 
+cmd
+\begin_inset Quotes erd
+\end_inset
 
+ (tanpa tanda petik).
+\end_layout
+
+\begin_layout Itemize
+Untuk menonaktifkan service apache, masuk ke dalam direktori apache/bin
+ (seperti pada contoh sebelumnya), lalu masukkan perintah:
+\end_layout
+
+\begin_layout LyX-Code
+httpd.exe -k uninstall -n Apache2.2
+\end_layout
+
+\begin_layout Itemize
+Untuk menonaktifkan service mysql, masuk ke dalam direktori mysql/bin (seperti
+ pada contoh sebelumnya), lalu masukkan perintah:
+\end_layout
+
+\begin_layout LyX-Code
+mysqld.exe --remove
 \end_layout
 
 \begin_layout Standard
-Selamat mencoba.
- Coba, unduh, laporkan! ;).
+Setelah semua langkah tersebut dilakukan, bisa dikatakan bahwa service apache
+ dan mysql pada psenayan sudah dinonaktifkan.
+ Jadi untuk memulai psenayan, kembali ke cara awal, dengan meng-klik apache_star
+t.bat dan mysql_start.bat.
 \end_layout
 
 \end_body
