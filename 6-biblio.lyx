@@ -96,7 +96,7 @@ hy.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -905,7 +905,7 @@ Menu ini memberikan informasi tentang item yang sedang dipinjam.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -955,6 +955,15 @@ P2P Service merupakan fitur baru yang ada mulai Senayan3Stable14.
  Untuk penggunaan P2P Service ini, cukup dengan klik p2p service, isikan
  kata kunci dan pilih lokasi/url/perpustakaan yang dituju untuk pencarian.
  Jika sistem menemukan koleksi yang dicari, maka akan ditampilkan.
+\end_layout
+
+\begin_layout Standard
+Pencarian pada P2P Service ini dapat menggunakan pencarian spesifik model
+ Boolean.
+ Sebagai contoh isbn=0-596-00108-8 AND title=bazaar.
+ Selain ISBN dan Title, pencarian detail dapat juga menggunakan author,
+ GMD dan subject.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1898,6 +1907,122 @@ Item import digunakan untuk memasukkan data item ke database Senayan.
  Artinya item akan menyesuaikan data bibliografi yang telah diimport lebih
  dahulu.
  
+\end_layout
+
+\begin_layout Section
+Biblio Custom Field
+\end_layout
+
+\begin_layout Standard
+Fitur ini digunakan untuk menambahkan Field baru pada Bibliografi, dimana
+ field ini dibutuhkan oleh perpustakaan yang menggunakan Senayan namun belum
+ tersedia dalam field standard Senayan.
+ 
+\end_layout
+
+\begin_layout Standard
+Untuk menambahkan field baru dilakukan langkah sebagai berikut:
+\end_layout
+
+\begin_layout Itemize
+Buka file custom_fields.inc.php yang terletak pada folder admin/modul/bibliography
+\end_layout
+
+\begin_layout Itemize
+Dalam file ini tersedia lima (5) Custom Field yang dapat digunakan, jika
+ hanya ingin menambah satu saja, maka 2-5 dapat dihapus.
+\end_layout
+
+\begin_layout Itemize
+Berikutnya anda harus merubah sesuai dengan kebutuhan field perpustakaan
+ anda, misalnya kita mau menambahkan nama penginput data, maka (misalnya):
+\end_layout
+
+\begin_layout LyX-Code
+'dbfield' => 'librarian', // name of field in 'biblio' table in database,
+ make sure you already define it! 
+\end_layout
+
+\begin_layout LyX-Code
+'label' => __('Librarian'), // label of field in form 
+\end_layout
+
+\begin_layout LyX-Code
+'type' => 'text', // type of field 
+\end_layout
+
+\begin_layout LyX-Code
+'default' => '', // default value of field 
+\end_layout
+
+\begin_layout LyX-Code
+'max' => '50', // maximum character to enter in 'text' field type
+\end_layout
+
+\begin_layout LyX-Code
+'data' => false, // an array of data for 'dropdown', 'checklist' or 'choice'
+\end_layout
+
+\begin_layout LyX-Code
+'indexed' => true, // NOT APPLICABLE YET, FOR FUTURE RELEASE USE
+\end_layout
+
+\begin_layout LyX-Code
+'width' => 50), // width of field in form for 'text' field type, maximum
+ is 100
+\end_layout
+
+\begin_layout Itemize
+Langkah berikutnya adalah membuat field librarian pada tabel biblio_custom.
+ Tabel biblio custom sudah ada jika kita menginstall senayan3-stable14 (Seulanga
+), atau akan terbuat jika dilakukan upgrade senayan ke senayan3-stable14
+\end_layout
+
+\begin_layout Itemize
+Hasil dari penambahan field tersebut ada pada tampilan Add New Bibliography
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/biblio-custom.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Biblio Custom 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

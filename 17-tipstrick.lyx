@@ -1,4 +1,4 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -422,7 +422,7 @@ Klik tabel biblio, kemudian lihat bagian Indexes pada bagian bawah.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -471,7 +471,7 @@ Kemudian pada “Create an Index on” isikan 1 dan klik Go, akan muncul tampila
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -519,7 +519,7 @@ Isilah kolom kosong diatas sehingga menjadi seperti berikut
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3487,7 +3487,7 @@ Untuk mendapatkan tampilan yang berbeda dari tampilan standar OPAC pengguna
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3766,54 +3766,231 @@ Simpan dan mula ulang komputer Anda.
  tanpa harus mengaktifkan file apache_start.bat dan mysql_start.bat lagi.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip 1em
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Selamat mencoba.
+ Coba, unduh, laporkan! ;).
+\end_layout
+
 \begin_layout Section
-Menonaktifkan Service yang telah dipasang
+Jika Kehilangan Password admin pada aplikasi Senayan
 \end_layout
 
 \begin_layout Standard
-Meletakkan apache dan mysql sebagai service aktif di dalam komputer bisa
- jadi memudahkan kita untuk memulai psenayan.
- Namun kadangkala terjadi satu dan lain hal yang memaksa kita untuk menonaktifka
-n service aktif tersebut.
- Cara dilakukan untuk menonaktifkan service tersebut adalah:
+Jika pustakawan lupa password admin pada aplikasi Senayan, maka jalan keluarnya
+ adalah merubah ulang password admin melalui database mysql.
+ Langkahnya adalah sebagai berikut:
 \end_layout
 
 \begin_layout Itemize
-Buka program command prompt yang ada pada sistem operasi windows.
- atau cukup klik run lalu masukkan perintah 
-\begin_inset Quotes eld
-\end_inset
-
-cmd
-\begin_inset Quotes erd
-\end_inset
-
- (tanpa tanda petik).
+Buka phpmyadmin, jika anda menggunakan Psenayan, ketikkan http://localhost/pma
+ kemudian masuk dengan username root dan password psenayan.
+ Maka akan muncul tampilan phpmyadmin.
 \end_layout
 
 \begin_layout Itemize
-Untuk menonaktifkan service apache, masuk ke dalam direktori apache/bin
- (seperti pada contoh sebelumnya), lalu masukkan perintah:
-\end_layout
-
-\begin_layout LyX-Code
-httpd.exe -k uninstall -n Apache2.2
+Cari database yang anda gunakan di sebelah kanan.
+ Jika belum dirubah maka databasenya adalah senayandb
 \end_layout
 
 \begin_layout Itemize
-Untuk menonaktifkan service mysql, masuk ke dalam direktori mysql/bin (seperti
- pada contoh sebelumnya), lalu masukkan perintah:
+Klik tabel user, tabel ini berisi username dan password yang digunakan untuk
+ masuk dalam aplikasi senayan.
+ Nah disinilah tempat dirubahnya password admin.
 \end_layout
 
-\begin_layout LyX-Code
-mysqld.exe --remove
+\begin_layout Itemize
+Setelah klik tabel user, maka di sebelah kanan akan muncul daftar username
+ yang dimiliki oleh aplikasi Senayan.
+ Klik tanda pena (edit) pada username admin (bernilai 1).
 \end_layout
 
 \begin_layout Standard
-Setelah semua langkah tersebut dilakukan, bisa dikatakan bahwa service apache
- dan mysql pada psenayan sudah dinonaktifkan.
- Jadi untuk memulai psenayan, kembali ke cara awal, dengan meng-klik apache_star
-t.bat dan mysql_start.bat.
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/ubah-pass1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daftar Username
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/ubah-pass2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Password Terenkripsi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ubah password yang telah terenkripsi dengan password baru, misalnya admin
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/ubah-pass3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Mengubah password dan merubah function ke MD5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pada Function pilih MD5, lalu klik Go.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/ubah-pass4.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Selesai Merubah Password
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Password untuk username admin anda telah tergantikan dengan admin.
+ Silakan masuk ke aplikasi Senayan dengan username admin dan password admin.
 \end_layout
 
 \end_body

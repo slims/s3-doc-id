@@ -617,5 +617,119 @@ Member Card
 
 \end_layout
 
+\begin_layout Section
+Member Custom Field
+\end_layout
+
+\begin_layout Standard
+Serupa dengan Biblio Custom, pada fitur ini pengguna senayan dapat menambahkan
+ informasi (field) baru yang harus diisikan dalam informasi keanggotaan.
+ Untuk menambahkan field baru, langkah-langkahnya adalah sebagai berikut:
+\end_layout
+
+\begin_layout Itemize
+Buka file member_custom_fields.inc.php yang terletak di folder /admin/modul/member
+ship
+\end_layout
+
+\begin_layout Itemize
+Dalam file ini terdapat 5 custom field yang dapat digunakan.
+ Custom field ini dapat dihapus atau dikurangi.
+ Misalnya akan di tambah 1 field baru untuk informasi status pernikahan.
+ Maka custon 2-5 dihapus terlebih dahulu.
+\end_layout
+
+\begin_layout Itemize
+Pada Custom Field 1 diisi sebagai berikut:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+'dbfield' => 'status', // name of field in 'biblio' table in database, make
+ sure you already define it! 
+\end_layout
+
+\begin_layout LyX-Code
+'label' => __('Status Pernikahan'), // label of field in form 
+\end_layout
+
+\begin_layout LyX-Code
+'type' => 'text', // type of field 
+\end_layout
+
+\begin_layout LyX-Code
+'default' => '', // default value of field 
+\end_layout
+
+\begin_layout LyX-Code
+'max' => '50', // maximum character to enter in 'text' field type
+\end_layout
+
+\begin_layout LyX-Code
+'data' => false, // an array of data for 'dropdown', 'checklist' or 'choice'
+\end_layout
+
+\begin_layout LyX-Code
+'indexed' => true, // NOT APPLICABLE YET, FOR FUTURE RELEASE USE
+\end_layout
+
+\begin_layout LyX-Code
+'width' => 50), // width of field in form for 'text' field type, maximum
+ is 100
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Berikutnya adalah menambahkan field/kolom status pada tabel ........
+\end_layout
+
+\begin_layout Itemize
+Hasil dari modifikasi ini adalah sebagai berikut (dapat dilihat pada add
+ new member):
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/member-custom.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Member Custom Field 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
