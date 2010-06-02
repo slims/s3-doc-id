@@ -62,7 +62,7 @@ Knowledge is free at the library.
 \begin_layout Section
 
 \lang bahasa
-Pengaturan Ukuran barcode, label dan kartu anggota
+Pengaturan Ukuran barcode, label, kartu anggota dan nota peminjaman
 \end_layout
 
 \begin_layout Standard
@@ -339,6 +339,46 @@ $barcodegen_items_margin = 0.05;
 
 \lang bahasa
 $barcodegen_include_border = 0;
+\end_layout
+
+\begin_layout Standard
+/* Receipt Printing */ 
+\end_layout
+
+\begin_layout Standard
+$receipt_width = '15cm'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_font = 'serif'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_color = '#000'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_margin = '5px'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_padding = '5px'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_border = '1px dashed #000'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_fontSize = '7pt'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_header_fontSize = '8pt'; 
+\end_layout
+
+\begin_layout Standard
+$receipt_titleLength = 100;
 \end_layout
 
 \begin_layout Standard
@@ -3828,7 +3868,7 @@ Setelah klik tabel user, maka di sebelah kanan akan muncul daftar username
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3868,7 +3908,7 @@ Daftar Username
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3912,7 +3952,7 @@ Ubah password yang telah terenkripsi dengan password baru, misalnya admin
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3956,7 +3996,7 @@ Pada Function pilih MD5, lalu klik Go.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
