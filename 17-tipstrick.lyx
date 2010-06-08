@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -3527,7 +3527,7 @@ Untuk mendapatkan tampilan yang berbeda dari tampilan standar OPAC pengguna
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3620,7 +3620,8 @@ Harap diingat, bahwa penamaan file gambar latar atau logo yang baru harus
 \end_layout
 
 \begin_layout Section
-Mengaktifkan SLiMS sebagai service di Microsoft Windows
+Mengaktifkan Apache dan MySQL pada psenayan sebagai service otomatis di
+ Microsoft Windows
 \end_layout
 
 \begin_layout Standard
@@ -3806,25 +3807,41 @@ Simpan dan mula ulang komputer Anda.
  tanpa harus mengaktifkan file apache_start.bat dan mysql_start.bat lagi.
 \end_layout
 
+\begin_layout Section
+Menonaktifkan service Apache dan MySQL pada psenayan di Microsoft Windows
+\end_layout
+
 \begin_layout Standard
-\begin_inset ERT
-status open
+Karena satu dan lain hal, mungkin ada kalanya kita ingin menghapus layanan
+ otomatis yang telah kita atur.
+ Untuk itu, apabila kita ingin menghapus layanan Apache maka, pertama-tama,
+ pastikan kita sudah berada pada direktori tempat service Apache berada
+\end_layout
 
-\begin_layout Plain Layout
-
-
+\begin_layout LyX-Code
+D:
 \backslash
-vskip 1em
-\end_layout
-
-\end_inset
-
-
+psenayan
+\backslash
+apache
+\backslash
+bin> htppd.exe -k uninstall -n Apache2.2
 \end_layout
 
 \begin_layout Standard
-Selamat mencoba.
- Coba, unduh, laporkan! ;).
+sedangkan apabila kita ingin menghapus layanan MySQL, sama seperti layanan
+ Apache, pastikan kita sudah berada pada direktory tempat service MySQL
+ berada
+\end_layout
+
+\begin_layout LyX-Code
+D:
+\backslash
+psenayan
+\backslash
+apache
+\backslash
+bin> mysqld.exe --remove
 \end_layout
 
 \begin_layout Section
@@ -3868,7 +3885,7 @@ Setelah klik tabel user, maka di sebelah kanan akan muncul daftar username
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3908,7 +3925,7 @@ Daftar Username
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3952,7 +3969,7 @@ Ubah password yang telah terenkripsi dengan password baru, misalnya admin
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3996,7 +4013,7 @@ Pada Function pilih MD5, lalu klik Go.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
