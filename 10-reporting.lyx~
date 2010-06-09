@@ -1290,7 +1290,7 @@ Fitur ini berisi informasi peminjam koleksi perpustakaan yang dalam 3 hari
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1298,7 +1298,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/report-duedatewarning.png
-	scale 60
+	scale 40
 	rotateOrigin centerTop
 
 \end_inset
