@@ -154,6 +154,26 @@ Fixed : Print receipt in circulation transaction.
 \begin_layout Itemize
 
 \lang bahasa
+Fixed : OPAC search error when searching with GMD or Collection type containing
+ more than one word 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Fixed : Non-decimal class total titles and items in Custom Recapitulation
+ reporting 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
+Fixed : Holiday calculation bugs in Circulation (critical) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang bahasa
 Added : Union Catalogue Server (more stable for production use) 
 \end_layout
 
@@ -174,26 +194,6 @@ Added : Custom fields for bibliographic data/Bibliography module (experimental)
 
 \lang bahasa
 Added : Custom fields for membership data/Membership module (experimental)
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Fixed : OPAC search error when searching with GMD or Collection type containing
- more than one word 
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Fixed : Non-decimal class total titles and items in Custom Recapitulation
- reporting 
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Fixed : Holiday calculation bugs in Circulation (critical) 
 \end_layout
 
 \begin_layout Itemize
