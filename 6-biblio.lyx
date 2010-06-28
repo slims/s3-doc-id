@@ -1069,7 +1069,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1095,6 +1095,15 @@ $sysconf['p2pserver'][3] = array('uri' => 'http://lib.geologi.ugm.ac.id/lib',
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Alamat OPAC Senayan yang hendak diambil datanya menggunakan P2P haruslah
+ mengaktifkan fitur xml.
+ Fitur ini dapat diaktifkan dalam modul System.
+ P2P hanya bisa dilakukan pada Senayan mulai stable-13.
 \end_layout
 
 \begin_layout Section
