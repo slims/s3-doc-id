@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -1002,6 +1002,94 @@ P2P Service
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+P2P dapat dikonfigurasi melalui perubahan pada file sysconfig.inc.php sebagaimana
+ contoh berikut:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Cari baris seperti di bawah ini,
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang bahasa
+$sysconf['p2pserver'][1] = array('uri' => 'http://127.0.0.1/senayan3-stable14',
+ 'name' => 'SLiMS Library');
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kemudian edit sesuai dengan alamat dan nama Perpustakaan yang dituju.
+ P2P dapat juga membaca dirinya sendiri.
+ Jika ada lebih dari satu alamat yang dituju, maka dapat ditambahkan baris
+ di bawahnya, sebagaimana contoh berikut:
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\lang bahasa
+$sysconf['p2pserver'][1] = array('uri' => 'http://127.0.0.1/slims', 'name'
+ => 'SLiMS Library');
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+$sysconf['p2pserver'][2] = array('uri' => 'http://perpustakaan.diknas.go.id',
+ 'name' => 'Perpustakaan Diknas');
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+$sysconf['p2pserver'][3] = array('uri' => 'http://lib.geologi.ugm.ac.id/lib',
+ 'name' => 'Perpustakaan Geologi UGM');
 \end_layout
 
 \end_inset
