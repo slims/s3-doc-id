@@ -1,4 +1,4 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -49,7 +49,7 @@ Manual Senayan versi 4
 \begin_inset Newline newline
 \end_inset
 
-Berdasar Senayan3-stable14
+Berdasar Senayan3-stable15
 \begin_inset Foot
 status collapsed
 
@@ -65,7 +65,7 @@ ditulis dengan LyX 1.6.5
 \begin_inset Newline newline
 \end_inset
 
-(SEULANGA)
+(MATOA)
 \end_layout
 
 \begin_layout Standard
