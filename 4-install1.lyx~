@@ -735,7 +735,7 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang bahasa
-Konfigurasi koneksi database pada file sysconfig.local.inc.php
+Konfigurasi koneksi database pada file sysconfig.inc.php
 \end_layout
 
 \end_inset
@@ -756,7 +756,7 @@ Konfigurasi koneksi database pada file sysconfig.local.inc.php
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
