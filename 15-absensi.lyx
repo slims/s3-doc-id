@@ -160,6 +160,11 @@ $allowed_counter_ip = array('10.45.1.1', '10.45.1.2','10.45.1.3');
 
 \begin_layout Standard
 Laporan kunjungan ini dapat dilihat pada modul reporting.
+ Namun demikian akses ke IP Server akan terganggu jika broser anda menggunakan
+ proxy.
+ Oleh karena itu, anda dapat menghapus seting proxy menuju server SLiMS
+ anda.
+ 
 \end_layout
 
 \end_body

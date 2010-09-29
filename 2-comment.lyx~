@@ -75,6 +75,32 @@ Semoga penamaan ini dapat membawa manfaat bagi semuanya.
 \end_layout
 
 \begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/matoa.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \lang bahasa
 Sumber: 
@@ -179,7 +205,7 @@ http://creativecommons.org/about/licenses/
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
