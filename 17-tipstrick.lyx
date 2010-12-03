@@ -1,4 +1,4 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -3885,7 +3885,7 @@ Setelah klik tabel user, maka di sebelah kanan akan muncul daftar username
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3925,7 +3925,7 @@ Daftar Username
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3969,7 +3969,7 @@ Ubah password yang telah terenkripsi dengan password baru, misalnya admin
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4013,7 +4013,7 @@ Pada Function pilih MD5, lalu klik Go.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4048,6 +4048,78 @@ Selesai Merubah Password
 \begin_layout Itemize
 Password untuk username admin anda telah tergantikan dengan admin.
  Silakan masuk ke aplikasi Senayan dengan username admin dan password admin.
+\end_layout
+
+\begin_layout Section
+Menambah jenis ekstensi file yang dapat diunggah pada lampiran bibliografi
+\end_layout
+
+\begin_layout Standard
+Ketika mengisi data bibliografi, akan ditemukan fasilitas untuk mengunggah
+ file gambar dan file attachment (lampiran).
+ File gambar ada bermacam-macam, demikian pula file dokumen yang akan diunggah.
+\end_layout
+
+\begin_layout Standard
+JIka anda mengunggah file dan gagal, salah satu kemungkinan (ingat hanya
+ salah satu kemungkinan) adalah ekstensi dokumen/file anda tidak diijinkan
+ diunggah.
+ Misalnya, file berekstensi .WAV.
+ Maka anda bisa melakukan penambahan ekstensi ini agar dapat diunggah.
+ 
+\end_layout
+
+\begin_layout Itemize
+Buka file sysconfig.inc.php
+\end_layout
+
+\begin_layout Itemize
+Cari baris ke (sekitar) 251, maka anda akan mendapatkan kelompok isian sebagai
+ berikut:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+$sysconf['max_image_upload'] = 500; // allowed image file to upload $sysconf['al
+lowed_images'] = array('.jpeg', '.jpg', '.gif', '.png', '.JPEG', '.JPG', '.GIF',
+ '.PNG'); // allowed file attachment to upload $sysconf['allowed_file_att']
+ = array('.pdf', '.rtf', '.txt', '.odt', '.odp', '.ods', '.doc', '.xls', '.ppt',
+ '.avi', '.mpeg', '.mp4', '.flv', '.mvk', '.jpg', '.jpeg', '.png', '.gif', '.ogg',
+ '.mp3');
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Anda dapat menambahkan jenis file yang anda maksudkan dalam kode di atas.
+\end_layout
+
+\begin_layout Standard
+Ekstensi file yang tertulis di sini bersifat case sensitif, jadi .mp3 akan
+ berbeda dengan .MP3.
+ Jika dalam sysconfig diijinkan .jpg, dan file anda .JPG maka proses unggah
+ tidak akan berhasil.
+\end_layout
+
+\begin_layout Standard
+Catatan: kegagalan proses unggah juga dipengaruhi oleh hak akses folder
+ image dan repository.
+ Pastikan kedua folder tersebut (jika menggunakan Linux) hak aksesnya 777.
 \end_layout
 
 \end_body
