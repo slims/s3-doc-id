@@ -4176,6 +4176,8 @@ Seting Email di sysconfig.inc.php
 
 \begin_layout Standard
 Seting diatas ada dalam file sysconfig.inc.php.
+ Atau jika anda mau, anda bisa mengcopy setingan Mailing Setting ini ke
+ sysconfig.local.inc.php.
 \end_layout
 
 \begin_layout Standard
@@ -4393,6 +4395,190 @@ status collapsed
 
 \begin_layout Plain Layout
 Tampilan Email yang diterima
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menambah Captcha 
+\end_layout
+
+\begin_layout Standard
+Mulai Senayan3-Stable15 (Matoa), ada penambahan fasilitas pengamanan login
+ pada login pustakawan dan member.
+\end_layout
+
+\begin_layout Standard
+Captcha ini ada dua, untuk Librarian Login dan untuk Member Login.
+ Untuk mengaktifkan captcha tersebut, perlu diseting pada file sysconfig.inc.php.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-cap-con.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Setting Captcha Login Pustakawan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-cap-mem.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Setting Captcha Member Login
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Untuk mengaktifkan, cukup diganti false menjadi true.
+ Maka ketika login akan menemukan tampilan sebagai berikut:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-login-con.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Setting Captcha Login Pustakawan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-login-mem.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Setting Captcha Member Login
 \end_layout
 
 \end_inset
