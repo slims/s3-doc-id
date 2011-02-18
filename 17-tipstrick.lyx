@@ -4405,5 +4405,24 @@ Tampilan Email yang diterima
 
 \end_layout
 
+\begin_layout Section
+
+\lang bahasa
+Menambah Captcha 
+\end_layout
+
+\begin_layout Standard
+Mulai Senayan3-Stable15 (Matoa), ada penambahan fasilitas pengamanan login
+ pada login pustakawan dan member.
+\end_layout
+
+\begin_layout Standard
+Untuk mengaktifkan captcha tersebut, perlu diseting pada file sysconfig.inc.php
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

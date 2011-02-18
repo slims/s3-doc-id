@@ -940,7 +940,7 @@ shell> chown -R daemon repository
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -985,20 +985,6 @@ status collapsed
 \begin_layout Plain Layout
 
 http://localhost/senayan3-stable10/
-\end_layout
-
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang bahasa
-Mulai stable 15 (Matoa) untuk menampilkan data bibliografi di OPAC SLiMS,
- terlebih dahulu harus dilakukan indexing.
- Cara index ada pada bagian Modul Sytems.
 \end_layout
 
 \end_inset

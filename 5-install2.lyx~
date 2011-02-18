@@ -108,7 +108,7 @@ Kopi file psenayan*.zip ke root directory/folder
 \lang bahasa
 Kopi file 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -119,23 +119,11 @@ psenayan-x.x.zip
 
  (misalnya psenayan-3.0.zip, silakan dapatkan rilis terbaru Psenayan di 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 http://senayan.diknas.go.id
-\end_layout
-
-\end_inset
-
- atau 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang bahasa
-http://slims.web.id
 \end_layout
 
 \end_inset

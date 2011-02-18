@@ -1,0 +1,115 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+
+\lang bahasa
+Home
+\end_layout
+
+\begin_layout Standard
+Ketika anda masuk ke halaman admin SLiMS, pertama kali yang ada lihat adalah
+ Home.
+ Sebagaimana gambar berikut:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/home.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tampilan Home
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pada tampilan Home diatas, pada sebelah kiri terdapat 5 Menu.
+ Ubah Profil User digunakan untuk merubah Nama User, username, dan password.
+ Sedangkan 4 menu lain di bawahnya merupakan menu yang sering digunakan,
+ dimana menu ini sebenarnya merupakan bagian dari Modul tertentu.
+ Tambah katalog baru, merupakan bagian dari Modul Bibliography, Mulai Transaksi
+ dan Pengembalian Kilat merupakan bagian dari modul Sirkulasi.
+ Tambah Anggota merupakan bagian dari modul Membership.
+\end_layout
+
+\begin_layout Standard
+Tulisan berwarna merah, merupakan tanda peringatan anggota yang terlambat
+ serta beberapa folder yang hak aksesnya masih terbatas.
+ Dalam kondisi ideal, mestinya tulisan warna merah ini tidak ada.
+ Jika ada folder yang masih belum dapat ditulis, maka anda harus mengubah
+ hak akses atas folder tersebut.
+\end_layout
+
+\end_body
+\end_document

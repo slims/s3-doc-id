@@ -4122,5 +4122,288 @@ Catatan: kegagalan proses unggah juga dipengaruhi oleh hak akses folder
  Pastikan kedua folder tersebut (jika menggunakan Linux) hak aksesnya 777.
 \end_layout
 
+\begin_layout Section
+Mensetting Email server
+\end_layout
+
+\begin_layout Standard
+Dalam Senayan3-stable15 terdapat fitur baru untuk mengirimkan email peringatan/t
+agihan pada peminjam yang terlambat mengembalikan.
+ Penggunaan fitur ini membutuhkan akun Google/Gmail, karena akan menggunakan
+ fasilitas smpt dari gmail.
+ Seting yang dibutuhkan adalah sebagaimana gambar dibawah ini:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-syscon-email.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Seting Email di sysconfig.inc.php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Seting diatas ada dalam file sysconfig.inc.php.
+\end_layout
+
+\begin_layout Standard
+Bagaimana penggunaannya? Penggunaan fitur email ini ada pada menu Sirkulasi.
+ Ketika memulai sirkulasi (ID anggota dimasukkan), jika anggota tersebut
+ mempunyai pinjaman yang terlambat, maka tampilan yang muncul adalah sebagai
+ berikut:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-email klik.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fitur Kirim email di Sirkulasi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kirim email dengan mengklik "Kirim surel tentang informasi keterlambatan",
+ jika berhasil maka akan ada tampilan/tulisan tambahan diatasnya sebagaimana
+ gambar berikut:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-email kirim.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Email terkirim
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Selain di menu Mulai Sirkulasi, kita juga dapat menggunakan fitur kirim
+ email ini lewat menu "Keterlambatan", baik yang ada pada Modul Sirkulasi
+ maupun Pelaporan.
+ Untuk mengirimkan email, cukup klik "Send Notification E-mail" pada tiap-tiap
+ anggota yang dikehendaki.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-terlambat.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kirim email lewat daftar terlambat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jika anggota perpustakaan membuka emailnya, maka akan ditemukan email yang
+ dikirimkan lewat sistem SLiMS tersebut.
+ Contoh gambarnya adalah sebagai berikut:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-email terima.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+List email di Inbox
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename image/tips-email buka.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tampilan Email yang diterima
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
