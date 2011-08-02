@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -113,7 +113,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\lang bahasa
 http://id.wikipedia.org/wiki/Matoa
 \end_layout
 
@@ -130,7 +129,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\lang bahasa
 http://forum.tamanroyal.com/index.php?topic=653.0
 \end_layout
 
@@ -164,7 +162,7 @@ Credit Title:
 \end_inset
 
 Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha (dicarve@yahoo.com)
- – Arif Syamsudin (buitenzorg812@yahoo.com) – M.
+ – Arif Syamsudin (buitenzorg812@gmail.com) – M.
  Rasyid Ridho (ridho_edogawa@yahoo.com) –Sulfan Zayd (sulfan@gmail.com) --
  Purwoko (tamanjiwa@gmail.com) -- Wardiyono (wynerst@gmail.com)
 \begin_inset Newline newline
@@ -178,7 +176,7 @@ Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha (dicarve@yahoo.com)
 \align center
 
 \lang bahasa
-Documen ini menggunakan Lisensi Creative Common License (CCL)
+Dokumen ini menggunakan Creative Common License (CCL)
 \begin_inset Newline newline
 \end_inset
 
