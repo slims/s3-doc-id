@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -45,18 +45,49 @@
 \begin_layout Section
 
 \lang bahasa
-Tentang Matoa:
+Tentang SLiMS:
 \end_layout
 
 \begin_layout Standard
 
 \lang bahasa
 Sebagai bentuk penghargaan dan kebanggaan terhadap Indonesia, mulai Senayan3-sta
-ble14 (Seulanga) rilis SLiMS menggunakan nama flora yang tumbuh di Nusantara.
- Pada rilis Senayan3-Stable15 ini, nama yang diambil adalah Matoa.
- 
+ble14 rilis SLiMS menggunakan nama flora yang tumbuh di Nusantara.
 \end_layout
 
+\begin_layout Itemize
+
+\lang bahasa
+Senayan3-stable14 (Seulanga)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang bahasa
+Seulanga merupakan tanaman ikon/khas Aceh.
+ Saat ini Seulanga sudah semakin langka dijumpai.
+ Pada masa lalu, tanaman yang menjadi salah satu ikon Aceh itu tumbuh dan
+ berkembang di pekarangan rumah penduduk provinsi ujung paling barat Indonesia
+ ini.
+ Seulanga, di bagian lain Indonesia juga dikenal sebagai Kenanga (Cananga
+ odorata).
+ Pohon Kenanga merupakan tanaman yang dapat tumbuh dengan cepat, hingga
+ lebih dari 5 meter per tahun dan mampu mencapai tinggi rata-rata 12 meter.
+ Daunnya panjang, halus dan berkilau.
+ Bunganya hijau kekuningan (ada juga yang bersemu dadu, tetapi jarang),
+ menggelung seperti bentu bintang laut, dan mengandung minyak biang, cananga
+ oil yang wangi.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang bahasa
+Senayan3-stable15 (Matoa)
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 
 \lang bahasa
@@ -68,6 +99,7 @@ MATOA, merupakan nama tanaman di Papua.
  Kulit ari putih bening melekat pada biji, manis dan harum.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 
 \lang bahasa
@@ -109,11 +141,10 @@ Sumber:
 
 \lang bahasa
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-\lang bahasa
 http://id.wikipedia.org/wiki/Matoa
 \end_layout
 
@@ -126,12 +157,60 @@ http://id.wikipedia.org/wiki/Matoa
 
 \lang bahasa
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-\lang bahasa
 http://forum.tamanroyal.com/index.php?topic=653.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://atjehpost.com/gaminong/kampus/2965-mapala-leuser-tanam-pohon-seulanga-dan-
+jeumpa-.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://id.wikipedia.org/wiki/Kenanga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://ace.wikipedia.org/wiki/Seulanga
 \end_layout
 
 \end_inset
@@ -164,7 +243,7 @@ Credit Title:
 \end_inset
 
 Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha (dicarve@yahoo.com)
- – Arif Syamsudin (buitenzorg812@yahoo.com) – M.
+ – Arif Syamsudin (buitenzorg812@gmail.com) – M.
  Rasyid Ridho (ridho_edogawa@yahoo.com) –Sulfan Zayd (sulfan@gmail.com) --
  Purwoko (tamanjiwa@gmail.com) -- Wardiyono (wynerst@gmail.com)
 \begin_inset Newline newline
@@ -178,7 +257,7 @@ Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha (dicarve@yahoo.com)
 \align center
 
 \lang bahasa
-Documen ini menggunakan Lisensi Creative Common License (CCL)
+Dokumen ini menggunakan Creative Common License (CCL)
 \begin_inset Newline newline
 \end_inset
 
