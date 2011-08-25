@@ -87,7 +87,8 @@ Form di sini dapat anda gunakan untuk melakukan pengubahan preferensi global
  pengembalian koleksi dengan metode cepat), Loan Limit Overrride (Pengabaian
  Batas Pinjam), Disable/Enable detail XML di OPAC, Disable/Enable hasil
  XML di OPAC, seting Allow (mengijinkan) atau Forbid (melarang) pengunjung/pengg
-una untuk mengunduh file attachment di OPAC, serta Session Login Timeout.
+una untuk mengunduh file attachment di OPAC, Session Login Timeout, serta
+ Barcode Encoding.
  Dalam menu ini pula, kita dapat melihat versi senayan yang kita gunakan.
 \end_layout
 

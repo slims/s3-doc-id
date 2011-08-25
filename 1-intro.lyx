@@ -141,89 +141,59 @@ thispagestyle{empty}
 \begin_layout Standard
 
 \lang bahasa
-Update Dokumentasi dari Senayan3-Stable12 ke Dokumentasi Senayan3-Stable14:
+Update di Senayan3-Stable15 (Matoa):
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Fixed : Print receipt in circulation transaction.
- 
+Add: template OPAC dan Admin default baru
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Fixed : OPAC search error when searching with GMD or Collection type containing
- more than one word 
+Add: pemesanan online oleh anggota
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Fixed : Non-decimal class total titles and items in Custom Recapitulation
- reporting 
+Add: fasilitas unduh riwayat peminjaman dan koleksi yang sedang dipinjam
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Fixed : Holiday calculation bugs in Circulation (critical) 
+Add: z39.50 ke lebih dari satu tujuan
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Added : Union Catalogue Server (more stable for production use) 
+Add: Bahasa Bengali
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Added : Peer-to-peer cataloging service 
+Add: orphan author dan orphan subyek
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Added : Custom fields for bibliographic data/Bibliography module (experimental)
- 
+Add: additional e-mail recipients for library administrator
 \end_layout
 
 \begin_layout Itemize
 
 \lang bahasa
-Added : Custom fields for membership data/Membership module (experimental)
+Add: peringatan status keanggotaan terlambat pada Visitor Counter
 \end_layout
 
 \begin_layout Itemize
 
-\lang bahasa
-Added : Espanol/Spanish translation (John Urrego Felipe Mejia) 
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Added : Arabic translation (Rasyid Ridho) 
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Added : SWF Document Viewer 
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Added : Bibliographic item data export and import features 
-\end_layout
-
-\begin_layout Itemize
-
-\lang bahasa
-Added : Show chart/plot graphic report
 \end_layout
 
 \end_body
