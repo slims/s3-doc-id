@@ -435,9 +435,15 @@ Finish Stock Take
 Klik link ini apabila kita telah selesai melakukan stock opname.
  Didalam menu ini, terdapat sub menu Purge Lost Item.
  Apabila kita memberikan tanda cek pada Yes, maka data item pada bibliography
- yang berada dalam Current Lost Item akan hilang, tapi data bibliografinya
- masih tersimpan.
- 
+ yang berada dalam Current Lost Item akan ditandai dengan 
+\begin_inset Quotes eld
+\end_inset
+
+Missing
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
