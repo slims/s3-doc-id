@@ -1,4 +1,4 @@
-#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -52,7 +52,7 @@ Tentang SLiMS:
 
 \lang bahasa
 Sebagai bentuk penghargaan dan kebanggaan terhadap Indonesia, mulai Senayan3-sta
-ble14 rilis SLiMS menggunakan nama flora yang tumbuh di Nusantara.
+ble14, rilis SLiMS menggunakan nama flora yang tumbuh di Nusantara.
 \end_layout
 
 \begin_layout Itemize
@@ -282,7 +282,7 @@ http://creativecommons.org/about/licenses/
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -298,6 +298,60 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mereka Bicara
+\end_layout
+
+\begin_layout Itemize
+
+\noun on
+Ivan Korolev (Pegiat SLiMS dari Spanyol):
+\noun default
+ Matoa (Stable 15), This is probably the best thing that can be ....
+ New features.
+ The new look of the program, which is certainly ponrailsya smart people.
+ So Matoa an embodiment of the future.
+ And it has come now.
+\end_layout
+
+\begin_layout Itemize
+
+\noun on
+Ismail Fahmi:
+\noun default
+ Turut bangga dengan Hendro (Wicaksono) dan kawan-kawan di SLiMS.
+ Sebuah pencapaian yg luar biasa.
+ Anda pantas mendapatkannya, karena dedikasi dan kerjakeras selama ini.
+ Semoga makin memompa semangat teman-teman untuk terus berkarya.
+\end_layout
+
+\begin_layout Itemize
+
+\noun on
+Diao Ai Lien
+\noun default
+ (Pustakawan berprestasi I DIKTI 2011): Bravo!! Maju terus SLIMS.
+\end_layout
+
+\begin_layout Itemize
+
+\noun on
+Putu Laxman Pendit:
+\noun default
+ TOP MARKOTOP! Semoga SLiMS dan Komunitasnya bisa terus jadi bukti bahwa
+ berbuat baik itu baik, tetapi lebih baik lagi kalau berbuat baik untuk
+ orang banyak! :-))
 \end_layout
 
 \end_body

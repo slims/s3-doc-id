@@ -145,6 +145,10 @@ Update di Senayan3-Stable15 (Matoa):
 \end_layout
 
 \begin_layout Itemize
+Add: konfigurasi sysconfig.local.inc.php
+\end_layout
+
+\begin_layout Itemize
 
 \lang bahasa
 Add: template OPAC dan Admin default baru
@@ -192,8 +196,36 @@ Add: additional e-mail recipients for library administrator
 Add: peringatan status keanggotaan terlambat pada Visitor Counter
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
+\lang bahasa
+Catatan Penting:
+\end_layout
+
+\begin_layout Standard
+File sysconfig.local.inc.php, merupakan file yang berfungsi sama konfigurasi
+ sama dengan sysconfig.inc.php.
+ Namun demikian, untuk perubahan di local, disarankan mengubah file sysconfig.loc
+al.inc.php saja.
+ Logikanya, jika ada dua konfigurasi sama di kedua file tersebut, maka yang
+ akan dibaca oleh aplikasi SLiMS adalah sysconfig.local.inc.php.
+\end_layout
+
+\begin_layout Standard
+Misal:
+\end_layout
+
+\begin_layout Standard
+Pada sysconfig.inc.php ada baris $sysconf['ucs']['enable'] = false;
+\end_layout
+
+\begin_layout Standard
+Pada sysconfig.local.inc.php ada baris $sysconf['ucs']['enable'] = true;
+\end_layout
+
+\begin_layout Standard
+Maka yang akan digunakan oleh Aplikasi SLiMS adalah konfigurasi yang bernilai
+ true.
 \end_layout
 
 \end_body

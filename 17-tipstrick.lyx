@@ -4668,7 +4668,9 @@ $sysconf['z3950_source'][1] = array('uri' => 'z3950.loc.gov:7090/voyager',
 
 \begin_layout Standard
 Dua baris kode diatas anda dapat memperoleh dengan copy-paste dari file
- sysconfig.inc.php pada baris 321 dan 322
+ sysconfig.inc.php pada baris 321 dan 322.
+ Baris pertama merupakan pengaturan jumlah record ditampilkan per halaman,
+ sedang baris kedua adalah pengaturan alamat server z39.50.
 \end_layout
 
 \begin_layout Standard
