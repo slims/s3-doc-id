@@ -4438,7 +4438,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename image/tips-cap-con.png
-	scale 60
+	scale 80
 
 \end_inset
 
@@ -4472,13 +4472,13 @@ Setting Captcha Login Pustakawan
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename image/tips-cap-mem.png
-	scale 60
+	scale 80
 
 \end_inset
 
@@ -4538,7 +4538,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Setting Captcha Login Pustakawan
+Tampilan Login Pustakawan dengan Captcha
 \end_layout
 
 \end_inset
@@ -4565,7 +4565,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename image/tips-login-mem.png
-	scale 60
+	scale 70
 
 \end_inset
 
@@ -4578,7 +4578,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Setting Captcha Member Login
+Tampilan Login Member dengan Captcha
 \end_layout
 
 \end_inset

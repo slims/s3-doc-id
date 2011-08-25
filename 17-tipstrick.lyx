@@ -4472,7 +4472,7 @@ Setting Captcha Login Pustakawan
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4519,7 +4519,7 @@ Untuk mengaktifkan, cukup diganti false menjadi true.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4559,7 +4559,7 @@ Tampilan Login Pustakawan dengan Captcha
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4589,6 +4589,117 @@ Tampilan Login Member dengan Captcha
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menambah Server Z.39.50
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Mulai Senayan3-stable15 (Matoa), pengguna SLiMS dimudahkan jika ingin menambahka
+n tujuan z.39.50 baru.
+ Syarat penggunaan z39.50 adalah terhubung ke internet, dan port yang dibutuhkan
+ terbuka.
+ Sebagaimana diketahui, sebelumnya z39.50 di SLiMS hanya menuju ke Library
+ of Congress Amerika.
+ Bagaimana menambahkannya?
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Buka situs 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+\lang bahasa
+http://irspy.indexdata.com/
+\end_layout
+
+\end_inset
+
+, pada situs ini anda dapat menemukan berbagai alamat perpustakaan yang
+ menyediakan server z39.50 untuk saling menukar data.
+ Alamat tersebut dikumpulkan berdasar abjad.
+ Alamat yang akan digunakan adalah perpaduan antara Host, Port dan DB.
+ Misalnya, pada web di atas ada Abertay Dundee University, dibaris yang
+ sama diikuti dengan keterangan Host=catalogue.abertay.ac.uk, Port=10790 dan
+ DB= Voyager.
+ Maka alamat yang nanti kita masukkan dalam setting adalah: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+\lang bahasa
+catalogue.abertay.ac.uk:10790/Voyager
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Buka file sysconfig.local.inc.php, kemudian tambahkan code berikut:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang bahasa
+$sysconf['z3950_max_result'] = 50; 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$sysconf['z3950_source'][1] = array('uri' => 'z3950.loc.gov:7090/voyager',
+ 'name' => 'Library of Congress Voyager');
+\end_layout
+
+\begin_layout Standard
+Dua baris kode diatas anda dapat memperoleh dengan copy-paste dari file
+ sysconfig.inc.php pada baris 321 dan 322
+\end_layout
+
+\begin_layout Standard
+Setelah itu, tambahkan baris baru (dibawahnya) yang memuat identitas server
+ tujuan z39.50 yang baru, sebagaimana contoh pada nomor 1 di atas (Perpustakaan
+ 
+\lang bahasa
+Abertay Dundee University)
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+$sysconf['z3950_source'][2] = array('uri' => 'catalogue.abertay.ac.uk:10790/Voyager
+', 'name' => 'Abertay Dundee University');
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang bahasa
+Selesai, Simpan dan cek di bagian Bibliografi, z39.50 server.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang bahasa
+Catatan: port yang disyaratkan oleh server z39.50 harus dibuka.
+ Misalnya pada contoh di atas adalah port 10790, untuk bagian ini jika mengalami
+ kesulitas silakan hubungi administrator jaringan di perpustakaan anda.
+ 
 \end_layout
 
 \end_body
